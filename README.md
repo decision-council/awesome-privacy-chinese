@@ -11,6 +11,7 @@
     * [🏢 大厂隐私中心](#大厂隐私中心) - 各大厂的隐私中心，设计理念和宗旨
     * [🔭 隐私基础概念](./principles.md) - 隐私设计的相关的基础概念、最佳实践、相关模型
     * [📙 隐私基础词汇](./glossary.md) - 隐私相关的一些基础英语简称和单词
+    * [📐 合规资料库(可核验)](./compliance/) - 法规原文归档 + 逐字可核验引文 + 机读义务表(75 份归档 / 135 条引文)
     * [🗞️ 相关新闻](./news.md) - 隐私相关时事新闻收集
         * [2023年01月](./news/202301.md)
         * [2023年02月](./news/202302.md)
@@ -57,14 +58,53 @@
 * [PDPA](https://thainetizen.org/wp-content/uploads/2019/11/thailand-personal-data-protection-act-2019-en.pdf) - 泰国个人数据保护法，20220607生效
 
 ### 重要国内法规和条例
-* [《个人保护法》- 2021/11/01](https://www.gov.cn/xinwen/2021-08/20/content_5632486.htm) | [个保法十大亮点](https://mp.weixin.qq.com/s/EOEYNAeG5Cxq3e3G4Mk87g) | [个保法专家解读](https://mp.weixin.qq.com/s/8-CTTz2Iv4bOlCbPbvNl5w)
-* [《网络安全法》- 2017/06/01](http://www.cac.gov.cn/2016-11/07/c_1119867116.htm) | [网络安全法解读](http://www.mca.gov.cn/article/zt_gjaqr2021/zjjd/202104/20210400033201.shtml) | [网信办解读网络安全法](http://www.cac.gov.cn/2020-05/03/c_1590051734208776.htm)
-* [《数据安全法》- 2021/09/01](https://www.gov.cn/xinwen/2021-06/11/content_5616919.htm) | [数据安全法解读](http://www.cac.gov.cn/2021-06/15/c_1625341228851523.htm)
-* [《数据网络安全管理条例》- 2021/11/14](http://www.cac.gov.cn/2021-11/14/c_1638501991577898.htm) |  [网络数据安全管理条例学习](https://mp.weixin.qq.com/s?__biz=MzIwNTA4NjAxMw==&mid=2648971266&idx=1&sn=12be3b5cab15294ff4530022831dec35&chksm=8f26f450b8517d462e0bce18fbf1e5898e475f8ce50d5ec621758e6893dc3948e20ee72d0742&token=557650794&lang=zh_CN#rd)
-* [《关键信息基础设施安全管理条例》- 2021/09/01](http://www.gov.cn/zhengce/content/2021-08/17/content_5631671.htm) | [官方答记者问](https://mp.weixin.qq.com/s/7epChMnwiZU3mUV_dGawqA)
-* [《网络安全审查办法》- 2022/02/15](http://www.cac.gov.cn/2022-01/04/c_1642894602182845.htm) | [官方答记者问](https://mp.weixin.qq.com/s/Avfc4EbEAEKkuo0CTDH7sQ)
-* [《GB/T 35273-2020 个人安全技术 个人信息安全规范》- 2020](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=4568F276E0F8346EB0FBA097AA0CE05E)
 
+> 本节只列骨架与施行日。**逐条的义务、门槛、期限与原文归档见 [合规资料库](./compliance/)** —— 那里每条事实都附来源原文的逐字引文,并由脚本校验。
+
+**法律**
+* [《中华人民共和国个人信息保护法》- 2021/11/01 施行](http://www.npc.gov.cn/npc/c2/c30834/202108/t20210820_313088.html) | [个保法十大亮点](https://mp.weixin.qq.com/s/EOEYNAeG5Cxq3e3G4Mk87g) | [个保法专家解读](https://mp.weixin.qq.com/s/8-CTTz2Iv4bOlCbPbvNl5w)
+* [《中华人民共和国数据安全法》- 2021/09/01 施行](https://www.gov.cn/xinwen/2021-06/11/content_5616919.htm) | [数据安全法解读](http://www.cac.gov.cn/2021-06/15/c_1625341228851523.htm)
+* [《中华人民共和国网络安全法》- 2017/06/01 施行](http://www.cac.gov.cn/2016-11/07/c_1119867116.htm) | [网信办解读](http://www.cac.gov.cn/2020-05/03/c_1590051734208776.htm)
+  * ⚠️ **已首次修订,修订后自 2026/01/01 起施行**:[全国人大常委会关于修改《网络安全法》的决定(2025/10/28 通过)](http://www.npc.gov.cn/npc/c2/c30834/202510/t20251028_449048.html) —— 大幅提高罚则并新增人工智能条款。引用条文前请确认用的是修订后版本。
+
+**行政法规**
+* [《网络数据安全管理条例》- 2025/01/01 施行](https://www.gov.cn/zhengce/zhengceku/202409/content_6977767.htm)(国令第790号,9 章 64 条) | [一图读懂](https://www.news.cn/politics/20250103/80230ae019b04809b6599ec6bf6061fb/c.html)
+  * 三个日期别混:2024/08/30 国务院常务会议通过、2024/09/24 总理签署、2024/09/30 公布。
+  * 注意:此前本清单列的 2021/11/14 版本是**征求意见稿**,不是条例本身。
+* [《关键信息基础设施安全保护条例》- 2021/09/01 施行](http://www.gov.cn/zhengce/content/2021-08/17/content_5631671.htm) | [官方答记者问](https://mp.weixin.qq.com/s/7epChMnwiZU3mUV_dGawqA)
+* [《未成年人网络保护条例》- 2024/01/01 施行](https://www.cac.gov.cn/2023-10/24/c_1699806932316206.htm) —— 处理未成年人个人信息须**每年**开展合规审计并报送网信部门。
+
+**数据出境(三条路径)**
+* [《促进和规范数据跨境流动规定》- 2024/03/22 公布即施行](https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm)(令第16号)—— 放宽条件、收窄安评范围,确立免申报情形与自贸区负面清单。
+* [《数据出境安全评估办法》- 2022/09/01 施行](https://www.cac.gov.cn/2022-07/07/c_1658811536396503.htm)(令第11号)| [答记者问](https://www.cac.gov.cn/2022-07/07/c_1658811536800962.htm)
+  * ⚠️ 评估结果有效期**已由 2 年延长为 3 年**(2024 年规定第九条);仍按办法原文的 2 年执行会出错。
+* [《个人信息出境标准合同办法》- 2023/06/01 施行](https://www.cac.gov.cn/2023-02/24/c_1678884830036813.htm)(令第13号)| [答记者问](https://www.cac.gov.cn/2023-02/24/c_1678884829601935.htm)
+* [《个人信息出境认证办法》- 2026/01/01 施行](https://www.cac.gov.cn/2025-10/17/c_1762449728720008.htm)(令第20号)—— 认证路径的正式上位依据;证书 3 年有效,**仅 3 家**备案机构可受理。
+* [各地省级网信部门受理申报/备案的联系方式](https://www.cac.gov.cn/2023-11/03/c_1700672263791309.htm)(32 家)
+* 官方政策问答(最贴近实务的解释,持续更新):[2025/04](https://www.cac.gov.cn/2025-04/09/c_1745906286623776.htm) · [2025/10](https://www.cac.gov.cn/2025-10/31/c_1763633376984070.htm) · [2026/01](https://www.cac.gov.cn/2026-01/30/c_1771505108953002.htm) · [2026/07](https://www.cac.gov.cn/2026-07/24/c_1786638883119336.htm)
+
+**合规审计与负责人**
+* [《个人信息保护合规审计管理办法》- 2025/05/01 施行](https://www.cac.gov.cn/2025-02/14/c_1741233507681519.htm)(令第18号)| [实施答记者问](https://www.cac.gov.cn/2025-05/27/c_1750056480898746.htm)
+  * 处理超 1000 万人每两年至少一次;100 万–1000 万每三或四年;不超 100 万每五年([2026/04 政策问答](https://www.cac.gov.cn/2026-04/29/c_1779200509387274.htm))。
+* [《关于开展个人信息保护负责人信息报送工作的公告》- 2025/07/18](https://www.cac.gov.cn/2025-07/18/c_1754553420421538.htm) —— 处理 100 万人以上须在 30 个工作日内向**设区的市级**网信部门报送;存量截止 2025/08/29。
+* [《网络数据安全风险评估办法》- 2026/08/20 施行](https://www.cac.gov.cn/2026-08/20/c_1788889498173657.htm) —— 重要数据处理者年度风评完成后 **20 个工作日**内报送。
+* 通过认证的审计专业机构名单:[第一批 13 家(2025/10)](https://www.cac.gov.cn/2025-10/21/c_1762768277043600.htm) · [第二批 14 家(2026/03)](https://www.cac.gov.cn/2026-03/26/c_1776261043648542.htm)
+
+**人工智能与新兴技术**
+* [《生成式人工智能服务管理暂行办法》- 2023/08/15 施行](https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm)(七部门令第15号)—— 通过 API 等**可编程接口**对外提供即落入「提供者」;未向境内公众提供则不适用。
+* [《人脸识别技术应用安全管理办法》- 2025/06/01 施行](https://www.cac.gov.cn/2025-03/21/c_1744174262156096.htm)(令第19号)—— 人脸信息原则上须**存储于设备内**、不得经互联网外传;存储达 10 万人须向省级以上网信部门备案。
+* [《互联网信息服务算法推荐管理规定》- 2022/03/01 施行](https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm) —— 上线后 **10 个工作日**内备案,备案编号须在显著位置公示。
+* [《互联网信息服务深度合成管理规定》- 2023/01/10 施行](https://www.cac.gov.cn/2022-12/11/c_1672221949318230.htm) —— AI 生成内容标识义务。
+
+**审查与行业**
+* [《网络安全审查办法》- 2022/02/15 施行](http://www.cac.gov.cn/2022-01/04/c_1642894602182845.htm) | [官方答记者问](https://mp.weixin.qq.com/s/Avfc4EbEAEKkuo0CTDH7sQ) —— 掌握超 100 万用户个人信息的网络平台运营者**赴国外上市**须申报审查。
+* [《汽车数据安全管理若干规定(试行)》- 2021/10/01 施行](https://www.cac.gov.cn/2021-08/20/c_1631049984897667.htm) —— 涉个人信息主体**超 10 万人即属重要数据**(比通用口径低两个数量级);每年 12 月 15 日前报送。
+* [《金融信息服务数据分类分级指南》- 2026/06/13 发布](https://www.cac.gov.cn/2026-06/13/c_1782919789934988.htm)(国信办通字〔2026〕2号)—— 四级分级 + 3/9/67 三层分类,六部门联合。
+
+**国家标准**
+* [GB/T 43697-2024《数据安全技术 数据分类分级规则》- 2024/10/01 实施](https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=F0C385EDC38CBF277AEC021F23126ADE)
+* [GB/T 35273-2020《信息安全技术 个人信息安全规范》](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=4568F276E0F8346EB0FBA097AA0CE05E) —— ⚠️ 据个保国标体系(2025版)标注为「修订中(草案)」,不宜作长期基线。
+* 按用途对号入座的完整国标清单(PIPIA / 敏感个人信息 / 自动化决策 / 出境认证 / App 自测)见 [合规资料库 02](./compliance/docs/02-国家标准与TC260实践指南.md)
 
 ### 隐私相关领域法规/条例
   #### 跨境相关
@@ -292,7 +332,7 @@
     * [duckduckgo.com - 隐私搜索引擎](https://duckduckgo.com/) | 理念：我们从不存储你的个人信息
     * [consentmanager - CMP](https://www.consentmanager.net/) | 重心： Higher Acceptance-Rates & Lower Bounce-Rate
     * [privado - 数据识别和保护](https://www.privado.ai/about) | 重心： The Developer Friendly Privacy Platform
-    * [clarip - 隐私管理平台](www.clarip.com) | 重心： DATA RISK INTELLIGENCE
+    * [clarip - 隐私管理平台](https://www.clarip.com) | 重心： DATA RISK INTELLIGENCE
     * [clear - GDPR solution](https://www.cleargdpr.com/) | 特点： with Blockchain anchored chain-of-custody records [git工具](https://github.com/ClearGDPR/ClearGDPR)
 
 * 国内创业公司

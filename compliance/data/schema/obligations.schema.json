@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Actionable obligation record",
+  "description": "One concrete duty a company can act on: a threshold that switches an obligation on, a deadline, a filing duty, an exemption, or a penalty. Every record carries a verbatim quote that scripts/verify_quotes.py checks against the archived source text — a paraphrased quote fails the build.",
+  "type": "object",
+  "required": ["id", "source_id", "obligation", "quote", "status"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["threshold", "deadline", "filing", "exemption", "penalty", "procedure", "definition"],
+      "description": "what sort of duty this is; drives the compliance-calendar view"
+    },
+    "obligation": {
+      "type": "string",
+      "minLength": 8,
+      "description": "the duty in one sentence"
+    },
+    "quote": {
+      "type": "string",
+      "minLength": 8,
+      "description": "VERBATIM span from sources/text/<source_id>.txt"
+    },
+    "why_actionable": {
+      "type": "string",
+      "description": "what a compliance officer does differently knowing this"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["in_force", "draft_for_comment", "superseded", "unclear"],
+      "description": "draft_for_comment must never be presented as a binding duty"
+    },
+    "topic": {
+      "type": "string",
+      "description": "cross_border | audit | ai | minors | enforcement | financial | platform | biometrics | general"
+    },
+    "source_id": {
+      "type": "string",
+      "description": "archived source id; must exist in sources/MANIFEST.json with ok=true"
+    },
+    "doc": {
+      "type": "string",
+      "description": "which docs/NN file covers this"
+    },
+    "conflict_note": {
+      "type": "string",
+      "description": "required when a figure has been superseded or sources disagree"
+    }
+  }
+}

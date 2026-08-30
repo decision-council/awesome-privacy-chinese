@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中华人民共和国网络安全法 -中央网络安全和信息化委员会办公室</title>
+    <meta name="Keywords" content="中央网络安全和信息化委员会办公室,国家互联网信息办公室">
+    <script language="JavaScript" src="//www.cac.gov.cn/inc/appvar.js"></script>
+    <script language="JavaScript" src="//www.cac.gov.cn/inc/appfunction.js"></script>
+    <script language="JavaScript" src="//www.cac.gov.cn/inc/pub.js"></script>
+    <script language="JavaScript" src="//www.cac.gov.cn/inc/date/WdatePicker.js"></script>
+    <script language="JavaScript" src="//www.cac.gov.cn/inc/flv.js"></script>
+    <script language="JavaScript" src="//www.cac.gov.cn/inc/tree.js"></script>
+    <script language="JavaScript" src="//www.cac.gov.cn/inc/tree_tpl.js"></script>
+    <script language="JavaScript" src="//www.cac.gov.cn/inc/jquery.min.js"></script>
+    <link rel="stylesheet" href="//www.cac.gov.cn/lib/pc/scheme/css/common.css" media="screen and (min-width:901px)">
+    <link rel="stylesheet" href="//www.cac.gov.cn/lib/pc/scheme/css/news.css" media="screen and (min-width:901px)">
+    <link rel="stylesheet" href="//www.cac.gov.cn/lib/pc/scheme/css/print.css" media="print" />
+    <link rel="stylesheet" href="//www.cac.gov.cn/lib/mobile/scheme/css/distinct.css" media="screen and (max-width: 900px)"/>
+    <link rel="stylesheet" href="//www.cac.gov.cn/lib/mobile/scheme/css/detail.css" media="screen and (max-width: 900px)"/>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="head-line">
+            <div class="top-bar">
+                <div id="time" class="left"></div>
+                <div class="right"><a class="t1" onclick="SetHome(this,window.location)" href="###">设为首页 </a>
+				<a class="t2" onclick="AddFavorite(window.location,document.title)" href="###">加入收藏 </a>
+				<a id="rwk_btn_ss" class="ydb" data-reveal-id="myModal" href="#" rel="noopener noreferrer">手机版 </a>
+				<a id="StranLink" class="t3" href="/###">繁体 </a></div>
+            </div>
+        </div>
+        <div class="logo-area">
+            <div class="logo">
+                <ul>
+                    <li><img src="//www.cac.gov.cn/lib/pc/scheme/images/logo01.png" /></li>
+                    <li><img src="//www.cac.gov.cn/lib/pc/scheme/images/logo02.png" /></li>
+                </ul>
+            </div>
+            <div class="search right">
+                <div class="con">
+                    <i id="logo"></i>
+                    <input id="sw" class="input1" onKeyDown="KeyDown();" name="huopro" value="请输入检索关键词" type="text" />
+                    <a class="btn_ss" onClick="searchsearch()" href="javascript:">搜索 </a>
+                    <form id="zlb" method="get" action="//search.cac.gov.cn/cms/cmsadmin/infopub/gjjs.jsp" target="_blank" name="frm">
+                        <input id="searchword" type="hidden" name="huopro" />
+                        <input type="hidden" name="pubtype" value="S" />
+                        <input type="hidden" name="pubpath" value="portal" />
+                        <input type="hidden" name="templetid" value="1563339473064626" />
+                        <input type="hidden" name="startDate" />
+                        <input type="hidden" name="endDate" />
+                        <input type="hidden" name="searchfield" />
+                        <input type="hidden" name="sort" value="1" />
+                        <input type="hidden" name="webappcode" value="A09" />
+                        <input type="hidden" name="searchdir" value="A09" />
+                    </form>
+                    <div class="clear"> </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-nav">
+			<ul id="nav" class="nav clearfix">
+                <li class="nLi on" id="home">
+                    <h3><a href="//www.cac.gov.cn/" target="_blank" rel="noopener noreferrer"><i></i>首 页</a></h3>
+                </li>
+                <li class="nLi" id="central">
+                    <h3><a href="//www.cac.gov.cn/yaowen/A0936index_1.htm" target="_blank" rel="noopener noreferrer"><i></i>时政要闻</a></h3>
+                </li>
+                <li class="nLi" id="gov">
+                    <h3><a href="//www.cac.gov.cn/wxzw/A0937index_1.htm" target="_blank" rel="noopener noreferrer"><i></i>网信政务</a></h3>
+                </li>
+                <li class="nLi" id="service">
+                    <h3><a href="//www.cac.gov.cn/hdfw/A0938index_1.htm" target="_blank" rel="noopener noreferrer"><i></i>互动服务</a></h3>
+                </li>
+                <li class="nLi" id="topic">
+                    <h3><a href="//www.cac.gov.cn/gzzt/ztzl/A092001index_1.htm" target="_blank" rel="noopener noreferrer"><i></i>热点专题</a></h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 当前位置 -->
+    <div class="current-path">
+        <p>当前位置：<a href="//www.cac.gov.cn/" target="_blank" rel="noopener noreferrer">首页</a>><a href="javascript:void(0);" rel="noopener noreferrer">正文</a></p>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="mobile-header">
+        <div class="logo-area1">
+            <div class="logo">
+                <ul>
+                    <li><img src="//www.cac.gov.cn/lib/mobile/scheme/images/logo01.png" /></li>
+                    <li><img src="//www.cac.gov.cn/lib/mobile/scheme/images/logo02.png" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="top-mobilenLinav">
+            <ul class="mobilenLinav">
+                <li class="mobilenLi"><a href="//wap.cac.gov.cn/phoneindex.htm" target="_blank">首页</a></li>
+                <li class="mobilenLi"><a href="//wap.cac.gov.cn/phoneindex.htm?defaultIndex=1" target="_blank">时政要闻</a></li>
+                <li class="mobilenLi"><a href="//wap.cac.gov.cn/phoneindex.htm?defaultIndex=2" target="_blank">网信政务</a></li>
+                 <li class="mobilenLi"><a href="//wap.cac.gov.cn/phoneindex.htm?defaultIndex=3" target="_blank">互动服务</a></li>
+                <li class="mobilenLi"><a href="//wap.cac.gov.cn/phoneindex.htm?defaultIndex=4" target="_blank">热点专题</a></li>
+            </ul>
+            <div class="searchLi"><img id="search" src="//www.cac.gov.cn/lib/pc/scheme/images/mobileimages/search.png" />
+			<img id="fold" src="//www.cac.gov.cn/lib/pc/scheme/images/mobileimages/fold.png" /></div>
+        </div>
+        <div class="search">
+            <div class="cac">
+                <img class="cacImg" src="//www.cac.gov.cn/lib/pc/scheme/images/mobileimages/CAC.png" />
+            </div>
+            <input id="mobilesw" class="search-input" type="text" maxlength="100" placeholder="请输入检索关键词" />
+            <div class="ashsearch" onClick="searchsearch(1)">
+                <img class="searchImg" src="//www.cac.gov.cn/lib/pc/scheme/images/mobileimages/ashsearch.png" />
+            </div>
+        </div>
+    </div>
+    <!-- 内容区 -->
+    <div class="main">
+        <div class="main-title">
+            <h1 class="title">中华人民共和国网络安全法 </h1>
+            <div class="info clearfix"><span id="pubtime">2016年11月07日 19:38:21 </span><span id="source">来源： 新华社 </span>
+                <div class="set_font">
+					<a class="font_subtract font_subtract_dis" href="#"> </a>
+					<a class="font_add"href="#"></a>
+				</div>
+                <div id="dyjc">
+                    <!-- Baidu Button BEGIN -->
+                    <div class="bdsharebuttonbox bdshare-button-style0-16" style="position: relative; display: block"
+                        data-bd-bind="1639532075507"><a title="分享到微信"
+                            class="bds_weixin" data-cmd="weixin" href="#"> </a><a title="分享到QQ空间" class="bds_qzone" data-cmd="qzone"
+                            href="#"> </a></div>
+                    <!-- Baidu Button END --><a id="print" href="javascript:window.print()">【打印】</a>
+<a class="btnCheck"><span class="btnjc">【纠错】</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div id="content">
+ <div style="text-align: center;"></div> 
+ <p><strong>第三章　网络运行安全</strong></p>
+ <p>第一节　一般规定</p>
+ <p>第二十一条　国家实行网络安全等级保护制度。网络运营者应当按照网络安全等级保护制度的要求，履行下列安全保护义务，保障网络免受干扰、破坏或者未经授权的访问，防止网络数据泄露或者被窃取、篡改：</p>
+ <p>（一）制定内部安全管理制度和操作规程，确定网络安全负责人，落实网络安全保护责任；</p>
+ <p>（二）采取防范计算机病毒和网络攻击、网络侵入等危害网络安全行为的技术措施；</p>
+ <p>（三）采取监测、记录网络运行状态、网络安全事件的技术措施，并按照规定留存相关的网络日志不少于六个月；</p>
+ <p>（四）采取数据分类、重要数据备份和加密等措施；</p>
+ <p>（五）法律、行政法规规定的其他义务。</p>
+ <p>第二十二条　网络产品、服务应当符合相关国家标准的强制性要求。网络产品、服务的提供者不得设置恶意程序；发现其网络产品、服务存在安全缺陷、漏洞等风险时，应当立即采取补救措施，按照规定及时告知用户并向有关主管部门报告。</p>
+ <p>网络产品、服务的提供者应当为其产品、服务持续提供安全维护；在规定或者当事人约定的期限内，不得终止提供安全维护。</p>
+ <p>网络产品、服务具有收集用户信息功能的，其提供者应当向用户明示并取得同意；涉及用户个人信息的，还应当遵守本法和有关法律、行政法规关于个人信息保护的规定。</p>
+ <p>第二十三条　网络关键设备和网络安全专用产品应当按照相关国家标准的强制性要求，由具备资格的机构安全认证合格或者安全检测符合要求后，方可销售或者提供。国家网信部门会同国务院有关部门制定、公布网络关键设备和网络安全专用产品目录，并推动安全认证和安全检测结果互认，避免重复认证、检测。</p>
+ <p>第二十四条　网络运营者为用户办理网络接入、域名注册服务，办理固定电话、移动电话等入网手续，或者为用户提供信息发布、即时通讯等服务，在与用户签订协议或者确认提供服务时，应当要求用户提供真实身份信息。用户不提供真实身份信息的，网络运营者不得为其提供相关服务。</p>
+ <p>国家实施网络可信身份战略，支持研究开发安全、方便的电子身份认证技术，推动不同电子身份认证之间的互认。</p>
+ <p>第二十五条　网络运营者应当制定网络安全事件应急预案，及时处置系统漏洞、计算机病毒、网络攻击、网络侵入等安全风险；在发生危害网络安全的事件时，立即启动应急预案，采取相应的补救措施，并按照规定向有关主管部门报告。</p>
+ <p>第二十六条　开展网络安全认证、检测、风险评估等活动，向社会发布系统漏洞、计算机病毒、网络攻击、网络侵入等网络安全信息，应当遵守国家有关规定。</p>
+ <p>第二十七条　任何个人和组织不得从事非法侵入他人网络、干扰他人网络正常功能、窃取网络数据等危害网络安全的活动；不得提供专门用于从事侵入网络、干扰网络正常功能及防护措施、窃取网络数据等危害网络安全活动的程序、工具；明知他人从事危害网络安全的活动的，不得为其提供技术支持、广告推广、支付结算等帮助。</p>
+ <p>第二十八条　网络运营者应当为公安机关、国家安全机关依法维护国家安全和侦查犯罪的活动提供技术支持和协助。</p>
+ <p>第二十九条　国家支持网络运营者之间在网络安全信息收集、分析、通报和应急处置等方面进行合作，提高网络运营者的安全保障能力。</p>
+ <p>有关行业组织建立健全本行业的网络安全保护规范和协作机制，加强对网络安全风险的分析评估，定期向会员进行风险警示，支持、协助会员应对网络安全风险。</p>
+ <p>第三十条　网信部门和有关部门在履行网络安全保护职责中获取的信息，只能用于维护网络安全的需要，不得用于其他用途。</p>
+ <p>第二节　关键信息基础设施的运行安全</p>
+ <p>第三十一条　国家对公共通信和信息服务、能源、交通、水利、金融、公共服务、电子政务等重要行业和领域，以及其他一旦遭到破坏、丧失功能或者数据泄露，可能严重危害国家安全、国计民生、公共利益的关键信息基础设施，在网络安全等级保护制度的基础上，实行重点保护。关键信息基础设施的具体范围和安全保护办法由国务院制定。</p>
+ <p>国家鼓励关键信息基础设施以外的网络运营者自愿参与关键信息基础设施保护体系。</p>
+ <p>第三十二条　按照国务院规定的职责分工，负责关键信息基础设施安全保护工作的部门分别编制并组织实施本行业、本领域的关键信息基础设施安全规划，指导和监督关键信息基础设施运行安全保护工作。</p>
+ <p>第三十三条　建设关键信息基础设施应当确保其具有支持业务稳定、持续运行的性能，并保证安全技术措施同步规划、同步建设、同步使用。</p>
+ <p>第三十四条　除本法第二十一条的规定外，关键信息基础设施的运营者还应当履行下列安全保护义务：</p>
+ <p>（一）设置专门安全管理机构和安全管理负责人，并对该负责人和关键岗位的人员进行安全背景审查；</p>
+ <p>（二）定期对从业人员进行网络安全教育、技术培训和技能考核；</p>
+ <p>（三）对重要系统和数据库进行容灾备份；</p>
+ <p>（四）制定网络安全事件应急预案，并定期进行演练；</p>
+ <p>（五）法律、行政法规规定的其他义务。</p>
+ <p>第三十五条　关键信息基础设施的运营者采购网络产品和服务，可能影响国家安全的，应当通过国家网信部门会同国务院有关部门组织的国家安全审查。</p>
+ <p>第三十六条　关键信息基础设施的运营者采购网络产品和服务，应当按照规定与提供者签订安全保密协议，明确安全和保密义务与责任。</p>
+ <p>第三十七条　关键信息基础设施的运营者在中华人民共和国境内运营中收集和产生的个人信息和重要数据应当在境内存储。因业务需要，确需向境外提供的，应当按照国家网信部门会同国务院有关部门制定的办法进行安全评估；法律、行政法规另有规定的，依照其规定。</p>
+ <p>第三十八条　关键信息基础设施的运营者应当自行或者委托网络安全服务机构对其网络的安全性和可能存在的风险每年至少进行一次检测评估，并将检测评估情况和改进措施报送相关负责关键信息基础设施安全保护工作的部门。</p>
+ <p>第三十九条　国家网信部门应当统筹协调有关部门对关键信息基础设施的安全保护采取下列措施：</p>
+ <p>（一）对关键信息基础设施的安全风险进行抽查检测，提出改进措施，必要时可以委托网络安全服务机构对网络存在的安全风险进行检测评估；</p>
+ <p>（二）定期组织关键信息基础设施的运营者进行网络安全应急演练，提高应对网络安全事件的水平和协同配合能力；</p>
+ <p>（三）促进有关部门、关键信息基础设施的运营者以及有关研究机构、网络安全服务机构等之间的网络安全信息共享；</p>
+ <p>（四）对网络安全事件的应急处置与网络功能的恢复等，提供技术支持和协助。</p>
+ <p><strong>第四章　网络信息安全</strong></p>
+ <p>第四十条　网络运营者应当对其收集的用户信息严格保密，并建立健全用户信息保护制度。</p>
+ <p>第四十一条　网络运营者收集、使用个人信息，应当遵循合法、正当、必要的原则，公开收集、使用规则，明示收集、使用信息的目的、方式和范围，并经被收集者同意。</p>
+ <p>网络运营者不得收集与其提供的服务无关的个人信息，不得违反法律、行政法规的规定和双方的约定收集、使用个人信息，并应当依照法律、行政法规的规定和与用户的约定，处理其保存的个人信息。</p>
+ <p>第四十二条　网络运营者不得泄露、篡改、毁损其收集的个人信息；未经被收集者同意，不得向他人提供个人信息。但是，经过处理无法识别特定个人且不能复原的除外。</p>
+ <p>网络运营者应当采取技术措施和其他必要措施，确保其收集的个人信息安全，防止信息泄露、毁损、丢失。在发生或者可能发生个人信息泄露、毁损、丢失的情况时，应当立即采取补救措施，按照规定及时告知用户并向有关主管部门报告。</p>
+ <p>第四十三条　个人发现网络运营者违反法律、行政法规的规定或者双方的约定收集、使用其个人信息的，有权要求网络运营者删除其个人信息；发现网络运营者收集、存储的其个人信息有错误的，有权要求网络运营者予以更正。网络运营者应当采取措施予以删除或者更正。</p>
+ <p>第四十四条　任何个人和组织不得窃取或者以其他非法方式获取个人信息，不得非法出售或者非法向他人提供个人信息。</p>
+ <p>第四十五条　依法负有网络安全监督管理职责的部门及其工作人员，必须对在履行职责中知悉的个人信息、隐私和商业秘密严格保密，不得泄露、出售或者非法向他人提供。</p>
+ <p>第四十六条　任何个人和组织应当对其使用网络的行为负责，不得设立用于实施诈骗，传授犯罪方法，制作或者销售违禁物品、管制物品等违法犯罪活动的网站、通讯群组，不得利用网络发布涉及实施诈骗，制作或者销售违禁物品、管制物品以及其他违法犯罪活动的信息。</p>
+ <p>第四十七条　网络运营者应当加强对其用户发布的信息的管理，发现法律、行政法规禁止发布或者传输的信息的，应当立即停止传输该信息，采取消除等处置措施，防止信息扩散，保存有关记录，并向有关主管部门报告。</p>
+ <p>第四十八条　任何个人和组织发送的电子信息、提供的应用软件，不得设置恶意程序，不得含有法律、行政法规禁止发布或者传输的信息。</p>
+ <p>电子信息发送服务提供者和应用软件下载服务提供者，应当履行安全管理义务，知道其用户有前款规定行为的，应当停止提供服务，采取消除等处置措施，保存有关记录，并向有关主管部门报告。</p>
+ <p>第四十九条　网络运营者应当建立网络信息安全投诉、举报制度，公布投诉、举报方式等信息，及时受理并处理有关网络信息安全的投诉和举报。</p>
+ <p>网络运营者对网信部门和有关部门依法实施的监督检查，应当予以配合。</p>
+ <p>第五十条　国家网信部门和有关部门依法履行网络信息安全监督管理职责，发现法律、行政法规禁止发布或者传输的信息的，应当要求网络运营者停止传输，采取消除等处置措施，保存有关记录；对来源于中华人民共和国境外的上述信息，应当通知有关机构采取技术措施和其他必要措施阻断传播。</p>
+ <div width="100%">
+  
+  <center>
+   <div id="div_page_roll1" style="display:none">
+    &nbsp;&nbsp; 
+    <a href="//www.cac.gov.cn/2016-11/07/c_1119867116.htm" class="nextpage">上一页</a> 
+    <a href="//www.cac.gov.cn/2016-11/07/c_1119867116.htm" class="page-Article">1</a> 
+    <span class="page-Article">2</span> 
+    <a href="//www.cac.gov.cn/2016-11/07/c_1119867116_3.htm" class="page-Article">3</a> 
+    <a href="//www.cac.gov.cn/2016-11/07/c_1119867116_3.htm" class="nextpage">下一页</a>&nbsp;&nbsp;
+   </div>
+   <div id="div_currpage">
+    &nbsp;&nbsp; 
+    <a href="//www.cac.gov.cn/2016-11/07/c_1119867116.htm" class="nextpage">上一页</a> 
+    <a href="//www.cac.gov.cn/2016-11/07/c_1119867116.htm" class="page-Article">1</a> 
+    <span class="page-Article">2</span> 
+    <a href="//www.cac.gov.cn/2016-11/07/c_1119867116_3.htm" class="page-Article">3</a> 
+    <a href="//www.cac.gov.cn/2016-11/07/c_1119867116_3.htm" class="nextpage">下一页</a>&nbsp;&nbsp;
+   </div>
+  </center>
+  
+ </div> 
+</div>
+        </div>
+        <div id="check">
+            <iframe id="jiucuoPage" width="460" height="410" src="//www.cac.gov.cn/cms/pub/interact/jiucuo.htm" frameborder="0"
+                scrolling="no"></iframe>
+        </div>
+        <span class="checkClose">关闭</span>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="foot">
+            <p>
+                <span>中央网络安全和信息化委员会办公室</span>
+                <span>中华人民共和国国家互联网信息办公室 © 版权所有</span>
+                <a href="//www.cac.gov.cn/hdfw/lxwm/A093812index_1.htm" target="_blank" rel="noopener noreferrer">联系我们</a>
+            </p>
+            <p>承办：国家互联网应急中心　技术支持：长安通信科技有限责任公司　<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">京ICP备14042428号</a>　
+				<a id="beian" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11040102700108" target="_blank" rel="noopener noreferrer"><i class="gwa"></i>京公网安备11040102700108号</a>
+            </p>
+            <div id="conac">
+				<a href="https://bszs.conac.cn/sitename?method=show&id=04E495BC1FB45E52E053022819AC1EB7" target="_blank" rel="noopener noreferrer"><img src="//www.cac.gov.cn/lib/pc/scheme/images/conac.png" alt="党政机关标识"></a>
+			</div>
+        </div>
+    </div>
+    <div class="footer mobile-footer">
+        <div class="line"></div>
+        <p class="footer-first">中央网络安全和信息化委员会办公室</p>
+        <p>中华人民共和国国家互联网信息办公室 &copy; 版权所有</p>
+        <p>承办：国家互联网应急中心</p>
+        <p>技术支持：长安通信科技有限责任公司</p>
+        <p>京ICP备14042428号</p>
+        <p><a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11040102700108" target="_blank" >京公网安备11040102700108号</a></p>
+        <p class="picture">
+			<img class="conac" src="//www.cac.gov.cn/lib/pc/scheme/images/mobileimages/conac.png" />
+			<a href="//www.cac.gov.cn/?f=pc">
+				<span class="pc"><img class="computer" src="//www.cac.gov.cn/lib/pc/scheme/images/mobileimages/computer.png">PC版</span>
+			</a>
+		</p>
+    </div>
+    <!-- 侧边栏飘窗 返回顶部 -->
+    <div class="right-nav">
+        <ul>
+            <li class="qg">
+                <h6>学习强国</h6>
+                <div class="ewm" id="qg">
+                    <div class="share_triangle"> <em class="border_triangle">◆</em> <span class="con_triangle">◆</span></div>
+                    <img src="//www.cac.gov.cn/lib/pc/scheme/images/QR-qg.jpg" alt="" srcset="">
+                </div>
+            </li>
+            <li class="wx">
+                <h6>微信</h6>
+                <div class="ewm" id="wx">
+                    <div class="share_triangle"> <em class="border_triangle">◆</em> <span class="con_triangle">◆</span></div>
+                    <img src="//www.cac.gov.cn/lib/pc/scheme/images/QR-wx.jpg" alt="" srcset="">
+                </div>
+            </li>
+            <li class="top">
+                <h6>返回顶部</h6>
+            </li>
+        </ul>
+    </div>
+    <script src="//www.cac.gov.cn/lib/pc/scheme/js/jquery1.4.2.min.js"></script>
+    <script src="//www.cac.gov.cn/lib/pc/scheme/js/stran.js"></script>
+    <script src="//www.cac.gov.cn/lib/pc/scheme/js/jquery.SuperSlide.js"></script>
+    <script src="//www.cac.gov.cn/lib/pc/scheme/js/common.js"></script>
+    <script src="//www.cac.gov.cn/lib/pc/scheme/js/foot.js"></script>
+    <script src="//www.cac.gov.cn/lib/mobile/scheme/js/news.js"></script>
+    
+    
+</html>

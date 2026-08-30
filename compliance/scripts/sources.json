@@ -1,0 +1,727 @@
+{
+  "_comment": "Single source of truth for archival. Every entry is fetched by scripts/fetch_sources.py and recorded in sources/MANIFEST.json with an sha256 digest. Add new entries here, never hand-edit MANIFEST.json.",
+  "_schema": {
+    "id": "stable slug, used as the archived filename",
+    "title": "official document title, verbatim",
+    "url": "official/primary source URL",
+    "category": "law | regulation | rule | standard | guide | enforcement | report | explainer",
+    "publisher": "issuing body",
+    "official": "true when the host is a government/standards body domain"
+  },
+  "sources": [
+    {
+      "id": "pipl-npc",
+      "title": "中华人民共和国个人信息保护法",
+      "url": "http://www.npc.gov.cn/npc/c2/c30834/202108/t20210820_313088.html",
+      "category": "law",
+      "publisher": "全国人民代表大会常务委员会",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "dsl-npc",
+      "title": "中华人民共和国数据安全法",
+      "url": "http://www.npc.gov.cn/npc/c2/c30834/202106/t20210610_311888.html",
+      "category": "law",
+      "publisher": "全国人民代表大会常务委员会",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "csl-npc",
+      "title": "中华人民共和国网络安全法",
+      "url": "https://www.cac.gov.cn/2016-11/07/c_1119867116.htm",
+      "category": "law",
+      "publisher": "全国人民代表大会常务委员会",
+      "official": true,
+      "note": "第1页(止于第二十条)。网信办正文分3页,施行日条款在第3页,故 csl-npc-p2 / csl-npc-p3 一并归档",
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "csl-npc-p2",
+      "title": "中华人民共和国网络安全法(第2页)",
+      "url": "https://www.cac.gov.cn/2016-11/07/c_1119867116_2.htm",
+      "category": "law",
+      "publisher": "全国人民代表大会常务委员会",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "csl-npc-p3",
+      "title": "中华人民共和国网络安全法(第3页,含附则与施行日)",
+      "url": "https://www.cac.gov.cn/2016-11/07/c_1119867116_3.htm",
+      "category": "law",
+      "publisher": "全国人民代表大会常务委员会",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "csl-amendment-2025",
+      "title": "全国人民代表大会常务委员会关于修改《中华人民共和国网络安全法》的决定",
+      "url": "http://www.npc.gov.cn/npc/c2/c30834/202510/t20251028_449048.html",
+      "category": "law",
+      "publisher": "全国人民代表大会常务委员会",
+      "official": true,
+      "note": "网络安全法自2016年制定以来首次修改,自2026年1月1日起施行",
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "network-data-security-regulation-govcn",
+      "title": "网络数据安全管理条例",
+      "url": "https://www.gov.cn/zhengce/zhengceku/202409/content_6977767.htm",
+      "category": "regulation",
+      "publisher": "国务院",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "cross-border-assessment-measures",
+      "title": "数据出境安全评估办法",
+      "url": "https://www.cac.gov.cn/2022-07/07/c_1658811536396503.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "cross-border-standard-contract-measures",
+      "title": "个人信息出境标准合同办法",
+      "url": "https://www.cac.gov.cn/2023-02/24/c_1678884830036813.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "cross-border-standard-contract-announcement",
+      "title": "国家互联网信息办公室公布《个人信息出境标准合同办法》",
+      "url": "https://www.cac.gov.cn/2023-02/24/c_1678884831596384.htm",
+      "category": "report",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "cross-border-policy-qa-2025-04",
+      "title": "数据出境安全管理政策问答(2025年4月)",
+      "url": "https://www.cac.gov.cn/2025-04/09/c_1745906286623776.htm",
+      "category": "explainer",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "cross-border-policy-qa-2025-10",
+      "title": "数据出境安全管理政策问答(2025年10月)",
+      "url": "https://www.cac.gov.cn/2025-10/31/c_1763633376984070.htm",
+      "category": "explainer",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "cross-border-policy-qa-2026-01",
+      "title": "数据出境安全管理政策法规问答(2026年1月)",
+      "url": "https://www.cac.gov.cn/2026-01/30/c_1771505108953002.htm",
+      "category": "explainer",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "minors-network-protection-regulation",
+      "title": "未成年人网络保护条例",
+      "url": "https://www.cac.gov.cn/2023-10/24/c_1699806932316206.htm",
+      "category": "regulation",
+      "publisher": "国务院",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "children-pi-protection-provisions",
+      "title": "儿童个人信息网络保护规定",
+      "url": "https://www.cac.gov.cn/2019-08/23/c_1124913903.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "cybersecurity-review-measures-2022",
+      "title": "网络安全审查办法(2022)",
+      "url": "https://www.cac.gov.cn/2022-01/04/c_1642894602182845.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室等十三部门",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "cross-border-provisions-fulltext",
+      "title": "促进和规范数据跨境流动规定",
+      "url": "https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "cross-border-provisions-announcement",
+      "title": "国家互联网信息办公室公布《促进和规范数据跨境流动规定》",
+      "url": "https://www.cac.gov.cn/2024-03/22/c_1712776612187994.htm",
+      "category": "report",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "cross-border-year1-review",
+      "title": "《促进和规范数据跨境流动规定》实施一周年数据出境安全管理工作取得积极成效",
+      "url": "https://www.cac.gov.cn/2025-03/21/c_1744174598705025.htm",
+      "category": "report",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "cross-border-year2-review",
+      "title": "《促进和规范数据跨境流动规定》实施两周年数据出境安全管理工作再上新台阶",
+      "url": "https://www.cac.gov.cn/2026-03/23/c_1775999628849905.htm",
+      "category": "report",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "cross-border-provisions-mofcom-qa",
+      "title": "《促进和规范数据跨境流动规定》答记者问",
+      "url": "https://policy.mofcom.gov.cn/claw/policyInfo.shtml?id=6170",
+      "category": "explainer",
+      "publisher": "商务部 全球法规网",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "compliance-audit-measures-announcement",
+      "title": "国家互联网信息办公室公布《个人信息保护合规审计管理办法》",
+      "url": "https://www.cac.gov.cn/2025-02/14/c_1741232791991016.htm",
+      "category": "report",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "compliance-audit-measures-fulltext",
+      "title": "个人信息保护合规审计管理办法(国家互联网信息办公室令 第18号)",
+      "url": "https://www.cac.gov.cn/2025-02/14/c_1741233507681519.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "compliance-audit-measures-qa",
+      "title": "《个人信息保护合规审计管理办法》实施有关事项答记者问",
+      "url": "https://www.cac.gov.cn/2025-05/27/c_1750056480898746.htm",
+      "category": "explainer",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "face-recognition-measures-fulltext",
+      "title": "人脸识别技术应用安全管理办法",
+      "url": "https://www.cac.gov.cn/2025-03/21/c_1744174262156096.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室、公安部",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "face-recognition-measures-announcement",
+      "title": "国家互联网信息办公室、公安部联合公布《人脸识别技术应用安全管理办法》",
+      "url": "https://www.cac.gov.cn/2025-03/21/c_1744174262342111.htm",
+      "category": "report",
+      "publisher": "国家互联网信息办公室、公安部",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "genai-interim-measures",
+      "title": "生成式人工智能服务管理暂行办法",
+      "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室等七部门",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "genai-filing-2025-announcement",
+      "title": "国家互联网信息办公室关于发布2025年生成式人工智能服务已备案信息的公告",
+      "url": "https://www.cac.gov.cn/2026-01/09/c_1769688009588554.htm",
+      "category": "report",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "app-notice-2026-04-33apps",
+      "title": "关于33款App个人信息收集使用问题的通报",
+      "url": "https://www.cac.gov.cn/2026-04/27/c_1779028107561553.htm",
+      "category": "enforcement",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "tc260-audit-requirements-notice",
+      "title": "关于发布《网络安全标准实践指南——个人信息保护合规审计要求》的通知",
+      "url": "https://www.tc260.org.cn/portal/article/2/20250519172429",
+      "category": "guide",
+      "publisher": "全国网络安全标准化技术委员会",
+      "official": true,
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "tc260-pi-standard-system-2025",
+      "title": "个人信息保护国家标准体系(2025版)",
+      "url": "https://www.tc260.org.cn/upload/2025-08-15/1755260054246031200.pdf",
+      "category": "guide",
+      "publisher": "全国网络安全标准化技术委员会",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "tc260-doc-2025-09-16",
+      "title": "TC260 发布文件(2025-09-16)",
+      "url": "https://www.tc260.org.cn/upload/2025-09-16/1757991247699056052.pdf",
+      "category": "guide",
+      "publisher": "全国网络安全标准化技术委员会",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "gbt-43697-2024-openstd",
+      "title": "GB/T 43697-2024 数据安全技术 数据分类分级规则",
+      "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=F0C385EDC38CBF277AEC021F23126ADE",
+      "category": "standard",
+      "publisher": "国家市场监督管理总局、国家标准化管理委员会",
+      "official": true,
+      "doc_kind": "index"
+    },
+    {
+      "id": "algorithm-recommendation-provisions",
+      "title": "互联网信息服务算法推荐管理规定",
+      "url": "https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室等四部门",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "deep-synthesis-provisions",
+      "title": "互联网信息服务深度合成管理规定",
+      "url": "https://www.cac.gov.cn/2022-12/11/c_1672221949318230.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室等三部门",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "automotive-data-provisions",
+      "title": "汽车数据安全管理若干规定(试行)",
+      "url": "https://www.cac.gov.cn/2021-08/20/c_1631049984897667.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室等五部门",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "app-necessary-pi-scope",
+      "title": "常见类型移动互联网应用程序必要个人信息范围规定",
+      "url": "https://www.cac.gov.cn/2021-03/22/c_1617990997054277.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室等四部门",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "app-violation-identification-method",
+      "title": "App违法违规收集使用个人信息行为认定方法",
+      "url": "https://www.cac.gov.cn/2019-12/27/c_1578986455686625.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室等四部门",
+      "official": true,
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "network-data-risk-assessment-2026-08-20",
+      "title": "《网络数据安全风险评估办法》实施有关事项答记者问",
+      "url": "https://www.cac.gov.cn/2026-08/20/c_1788889498173657.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/数据专栏总入口",
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "special-action-progress-2026-08-19",
+      "title": "2026年个人信息保护系列专项行动取得阶段性成效",
+      "url": "https://www.cac.gov.cn/2026-08/19/c_1788889479389148.htm",
+      "category": "report",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/数据专栏总入口",
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "pi-policy-qa-2026-08-12",
+      "title": "个人信息保护政策法规问答（2026年8月）",
+      "url": "https://www.cac.gov.cn/2026-08/12/c_1788195297373459.htm",
+      "category": "explainer",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/数据专栏总入口",
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "large-pi-processor-draft-draft-2026-08-07",
+      "title": "国家互联网信息办公室关于《大型个人信息处理者个人信息保护规定（征求意见稿）》公开征求意见的通知",
+      "url": "https://www.cac.gov.cn/2026-08/07/c_1787851071612596.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/数据专栏总入口",
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "cross-border-policy-qa-2026-07-24",
+      "title": "数据出境安全管理政策法规问答（2026年7月）",
+      "url": "https://www.cac.gov.cn/2026-07/24/c_1786638883119336.htm",
+      "category": "explainer",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/数据专栏总入口",
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "financial-data-classification-guide-2026-06-13",
+      "title": "关于印发《金融信息服务数据分类分级指南》的通知",
+      "url": "https://www.cac.gov.cn/2026-06/13/c_1782919789934988.htm",
+      "category": "guide",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/数据专栏总入口",
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "financial-data-classification-guide-2026-06-13-2",
+      "title": "《金融信息服务数据分类分级指南》答记者问",
+      "url": "https://www.cac.gov.cn/2026-06/13/c_1783104511414074.htm",
+      "category": "guide",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/数据专栏总入口",
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "china-pi-report-2025-2026-06-12",
+      "title": "国家互联网信息办公室发布《中国个人信息保护报告（2025年）》",
+      "url": "https://www.cac.gov.cn/2026-06/12/c_1782920093045011.htm",
+      "category": "report",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/数据专栏总入口",
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "china-pi-report-2025-2026-06-12-2",
+      "title": "中国个人信息保护报告（2025年）",
+      "url": "https://www.cac.gov.cn/2026-06/12/c_1782920093356001.htm",
+      "category": "report",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/数据专栏总入口",
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "china-pi-report-2025-2026-06-12-3",
+      "title": "《中国个人信息保护报告（2025年）》答记者问",
+      "url": "https://www.cac.gov.cn/2026-06/12/c_1783006206762894.htm",
+      "category": "report",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/数据专栏总入口",
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "app-notice-2026-06-11",
+      "title": "关于30款App个人信息收集使用问题的通报",
+      "url": "https://www.cac.gov.cn/2026-06/11/c_1782920097670955.htm",
+      "category": "enforcement",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/数据专栏总入口",
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "pi-policy-qa-2026-04-29",
+      "title": "个人信息保护政策法规问答（2026年4月）",
+      "url": "https://www.cac.gov.cn/2026-04/29/c_1779200509387274.htm",
+      "category": "explainer",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/个人信息保护",
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "audit-certified-institutions-b2-2026-03-26",
+      "title": "通过个人信息保护合规审计服务认证的专业机构名单（第二批）",
+      "url": "https://www.cac.gov.cn/2026-03/26/c_1776261043648542.htm",
+      "category": "report",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/个人信息保护",
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "pi-policy-qa-2026-01-09",
+      "title": "个人信息保护政策法规问答（2026年1月）",
+      "url": "https://www.cac.gov.cn/2026-01/09/c_1769688003183197.htm",
+      "category": "explainer",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/个人信息保护",
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "pi-cert-institutions-2025-12-30",
+      "title": "关于发布通过备案的个人信息出境认证专业机构的公告",
+      "url": "https://www.cac.gov.cn/2025-12/30/c_1768735664909127.htm",
+      "category": "report",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/个人信息出境认证",
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "minors-audit-reporting-2025-12-29",
+      "title": "关于报送未成年人个人信息保护合规审计情况的公告",
+      "url": "https://www.cac.gov.cn/2025-12/29/c_1768735145606358.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/个人信息保护",
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "pi-cert-standard-change-2025-12-25",
+      "title": "国家市场监督管理总局 国家互联网信息办公室关于变更个人信息出境认证依据标准的公告",
+      "url": "https://www.cac.gov.cn/2025-12/25/c_1768389897326323.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/个人信息出境认证",
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "audit-certified-institutions-b1-2025-10-21",
+      "title": "通过个人信息保护合规审计服务认证的专业机构名单（第一批）",
+      "url": "https://www.cac.gov.cn/2025-10/21/c_1762768277043600.htm",
+      "category": "report",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/个人信息保护",
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "pi-export-certification-measures-2025-10-17",
+      "title": "个人信息出境认证办法",
+      "url": "https://www.cac.gov.cn/2025-10/17/c_1762449728720008.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/政策法规",
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "platform-supervision-committee-draft-draft-2025-09-12",
+      "title": "国家互联网信息办公室关于《大型网络平台设立个人信息保护监督委员会规定（征求意见稿）》公开征求意见的通知",
+      "url": "https://www.cac.gov.cn/2025-09/12/c_1759395487456327.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/政策法规",
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "dpo-reporting-2025-07-18",
+      "title": "关于开展个人信息保护负责人信息报送工作的公告",
+      "url": "https://www.cac.gov.cn/2025-07/18/c_1754553420421538.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/个人信息保护",
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "cross-border-assessment-guide-v3-2025-06-27",
+      "title": "国家互联网信息办公室发布《数据出境安全评估申报指南（第三版）》",
+      "url": "https://www.cac.gov.cn/2025-06/27/c_1752652339765002.htm",
+      "category": "guide",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/数据出境安全评估",
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "cross-border-policy-qa-2025-05-30",
+      "title": "数据出境安全管理政策问答（2025年5月）",
+      "url": "https://www.cac.gov.cn/2025-05/30/c_1750315283722063.htm",
+      "category": "explainer",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/政策法规",
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "face-recognition-filing-2025-05-30",
+      "title": "关于开展人脸识别技术应用备案工作的公告",
+      "url": "https://www.cac.gov.cn/2025-05/30/c_1750315544241157.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/政策法规",
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "app-notice-2025-05-06",
+      "title": "关于15款App和16款SDK个人信息收集使用问题的通报",
+      "url": "https://www.cac.gov.cn/2025-05/06/c_1748239411359045.htm",
+      "category": "enforcement",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/工作动态",
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "cross-border-assessment-guide-v2-2024-03-22",
+      "title": "国家互联网信息办公室发布《数据出境安全评估申报指南（第二版）》和《个人信息出境标准合同备案指南（第二版）》",
+      "url": "https://www.cac.gov.cn/2024-03/22/c_1712783131692707.htm",
+      "category": "guide",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/数据出境安全评估",
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "provincial-contacts-2023-11-03",
+      "title": "各地省级网信部门受理数据出境安全评估申报、个人信息出境标准合同备案工作的联系方式",
+      "url": "https://www.cac.gov.cn/2023-11/03/c_1700672263791309.htm",
+      "category": "guide",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/数据出境安全评估",
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "standard-contract-filing-guide-v1-2023-05-30",
+      "title": "国家互联网信息办公室发布《个人信息出境标准合同备案指南（第一版）》",
+      "url": "https://www.cac.gov.cn/2023-05/30/c_1687090906222927.htm",
+      "category": "guide",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/个人信息出境标准合同",
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "qa-2023-02-24",
+      "title": "《个人信息出境标准合同办法》答记者问",
+      "url": "https://www.cac.gov.cn/2023-02/24/c_1678884829601935.htm",
+      "category": "explainer",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/个人信息出境标准合同",
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "pi-certification-announcement-2022-11-18",
+      "title": "关于实施个人信息保护认证的公告",
+      "url": "https://www.cac.gov.cn/2022-11/18/c_1670399936658129.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/个人信息出境认证",
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "pi-certification-impl-rules-2022-11-18",
+      "title": "个人信息保护认证实施规则",
+      "url": "https://www.cac.gov.cn/2022-11/18/c_1670399936983876.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/个人信息出境认证",
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "cross-border-assessment-guide-v1-2022-08-31",
+      "title": "国家互联网信息办公室发布《数据出境安全评估申报指南（第一版）》",
+      "url": "https://www.cac.gov.cn/2022-08/31/c_1663568169996202.htm",
+      "category": "guide",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/数据出境安全评估",
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "cac-doc-2022-07-07",
+      "title": "国家互联网信息办公室公布《数据出境安全评估办法》",
+      "url": "https://www.cac.gov.cn/2022-07/07/c_1658811536594644.htm",
+      "category": "report",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/数据出境安全评估",
+      "doc_kind": "announcement"
+    },
+    {
+      "id": "qa-2022-07-07",
+      "title": "《数据出境安全评估办法》答记者问",
+      "url": "https://www.cac.gov.cn/2022-07/07/c_1658811536800962.htm",
+      "category": "explainer",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/数据出境安全评估",
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "draft-consultation-2022-06-30",
+      "title": "国家互联网信息办公室关于《个人信息出境标准合同规定（征求意见稿）》公开征求意见的通知",
+      "url": "https://www.cac.gov.cn/2022-06/30/c_1658205969531631.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/个人信息出境标准合同",
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "draft-consultation-2021-10-29",
+      "title": "国家互联网信息办公室关于《数据出境安全评估办法（征求意见稿）》公开征求意见的通知",
+      "url": "https://www.cac.gov.cn/2021-10/29/c_1637102874600858.htm",
+      "category": "rule",
+      "publisher": "国家互联网信息办公室",
+      "official": true,
+      "discovered_via": "CAC 数据专栏/数据出境安全评估",
+      "doc_kind": "fulltext"
+    },
+    {
+      "id": "gbt-45654-2025-openstd",
+      "title": "GB/T 45654-2025 网络安全技术 生成式人工智能服务安全基本要求(标准平台检索条目)",
+      "url": "https://openstd.samr.gov.cn/bzgk/gb/std_list?p.p1=0&p.p90=circulation_date&p.p91=desc&p.p2=45654",
+      "category": "standard",
+      "publisher": "国家市场监督管理总局、国家标准化管理委员会",
+      "official": true,
+      "note": "检索结果页,非标准正文;用于佐证标准号与名称存在,量化阈值仍需取正文",
+      "doc_kind": "index"
+    }
+  ]
+}

@@ -1,0 +1,710 @@
+{
+  "_comment": "Machine-readable index of China data/privacy legal instruments. Every record is verified against an archived primary source in sources/. Validated by scripts/validate.py against data/schema/regulations.schema.json. Dates are extracted verbatim from the archived text — never from memory.",
+  "generated_by": "manual curation + scripts/validate.py gate",
+  "timezone": "Asia/Shanghai (UTC+8)",
+  "records": [
+    {
+      "id": "csl-2016",
+      "name": "中华人民共和国网络安全法",
+      "name_en": "Cybersecurity Law of the People's Republic of China",
+      "abbr": "CSL",
+      "level": "law",
+      "publisher": "全国人民代表大会常务委员会",
+      "promulgated_date": "2016-11-07",
+      "effective_date": "2017-06-01",
+      "status": "superseded",
+      "topics": [
+        "cybersecurity",
+        "cii",
+        "network_operations"
+      ],
+      "summary": "网络运行安全、关键信息基础设施保护与网络信息安全的总框架法;2025年10月28日经修改,修改后自2026年1月1日起施行。",
+      "source_id": "csl-npc,csl-npc-p3",
+      "source_url": "https://www.cac.gov.cn/2016-11/07/c_1119867116.htm",
+      "verification": "confirmed",
+      "evidence_quote": "（2016年11月7日第十二届全国人民代表大会常务委员会第二十四次会议通过）…… 第七十九条 本法自2017年6月1日起施行。",
+      "conflict_note": "网信办正文分3页,施行日条款在第3页(csl-npc-p3)。status=superseded 指其已被 csl-amendment-2025 修改,并非废止。"
+    },
+    {
+      "id": "csl-amendment-2025",
+      "name": "全国人民代表大会常务委员会关于修改《中华人民共和国网络安全法》的决定",
+      "level": "law",
+      "publisher": "全国人民代表大会常务委员会",
+      "promulgated_date": "2025-10-28",
+      "effective_date": "2026-01-01",
+      "status": "in_force",
+      "topics": [
+        "cybersecurity",
+        "ai",
+        "penalties"
+      ],
+      "summary": "网络安全法自2016年制定以来首次修改:大幅强化法律责任(罚款额度与个人责任),并新增支持人工智能发展与安全监管的条款。",
+      "source_id": "csl-amendment-2025",
+      "source_url": "http://www.npc.gov.cn/npc/c2/c30834/202510/t20251028_449048.html",
+      "verification": "confirmed",
+      "evidence_quote": "2025年10月28日第十四届全国人民代表大会常务委员会第十八次会议通过 …… 自2026年1月1日起施行"
+    },
+    {
+      "id": "dsl",
+      "name": "中华人民共和国数据安全法",
+      "name_en": "Data Security Law of the People's Republic of China",
+      "abbr": "DSL",
+      "level": "law",
+      "publisher": "全国人民代表大会常务委员会",
+      "effective_date": "2021-09-01",
+      "status": "in_force",
+      "topics": [
+        "data_security",
+        "important_data",
+        "classification"
+      ],
+      "summary": "确立数据分类分级、重要数据保护与数据处理者安全义务的基础法律。",
+      "source_id": "dsl-npc",
+      "source_url": "http://www.npc.gov.cn/npc/c2/c30834/202106/t20210610_311888.html",
+      "verification": "confirmed",
+      "evidence_quote": "2021年6月10日第十三届全国人民代表大会常务委员会第二十九次会议通过 …… 自2021年9月1日起施行。",
+      "promulgated_date": "2021-06-10"
+    },
+    {
+      "id": "pipl",
+      "name": "中华人民共和国个人信息保护法",
+      "name_en": "Personal Information Protection Law",
+      "abbr": "PIPL",
+      "level": "law",
+      "publisher": "全国人民代表大会常务委员会",
+      "promulgated_date": "2021-08-20",
+      "effective_date": "2021-11-01",
+      "status": "in_force",
+      "topics": [
+        "personal_information",
+        "consent",
+        "cross_border",
+        "sensitive_pi"
+      ],
+      "summary": "个人信息处理的合法性基础、个人权利、敏感个人信息与出境规则的基础法律。",
+      "source_id": "pipl-npc",
+      "source_url": "http://www.npc.gov.cn/npc/c2/c30834/202108/t20210820_313088.html",
+      "verification": "confirmed",
+      "evidence_quote": "2021年8月20日第十三届全国人民代表大会常务委员会第三十次会议通过 …… 自2021年11月1日起施行。"
+    },
+    {
+      "id": "network-data-security-regulation",
+      "name": "网络数据安全管理条例",
+      "level": "regulation",
+      "publisher": "国务院",
+      "document_number": "中华人民共和国国务院令 第790号",
+      "promulgated_date": "2024-09-24",
+      "effective_date": "2025-01-01",
+      "status": "in_force",
+      "topics": [
+        "data_security",
+        "personal_information",
+        "important_data",
+        "cross_border",
+        "platforms"
+      ],
+      "summary": "三法之下统一的配套行政法规,共9章64条;明确个人信息处理规则、重要数据风险评估、大型网络平台义务与跨境合法情形。",
+      "source_id": "network-data-security-regulation-govcn",
+      "source_url": "https://www.gov.cn/zhengce/zhengceku/202409/content_6977767.htm",
+      "verification": "confirmed",
+      "evidence_quote": "《网络数据安全管理条例》已经2024年8月30日国务院第40次常务会议通过，现予公布，自2025年1月1日起施行。 总理 李强 2024年9月24日",
+      "conflict_note": "三个日期须区分:2024-08-30 国务院常务会议通过;2024-09-24 总理签署(promulgated_date 取此);2024-09-30 中国政府网公布。不可合写为「9月30日签署公布」。"
+    },
+    {
+      "id": "minors-network-protection-regulation",
+      "name": "未成年人网络保护条例",
+      "level": "regulation",
+      "publisher": "国务院",
+      "effective_date": "2024-01-01",
+      "status": "in_force",
+      "topics": [
+        "minors",
+        "personal_information"
+      ],
+      "summary": "未成年人网络素养、信息内容、个人信息与网络沉迷防治的综合性行政法规。",
+      "source_id": "minors-network-protection-regulation",
+      "source_url": "https://www.cac.gov.cn/2023-10/24/c_1699806932316206.htm",
+      "verification": "confirmed",
+      "evidence_quote": "自2024年1月1日起施行。"
+    },
+    {
+      "id": "cross-border-flow-provisions",
+      "name": "促进和规范数据跨境流动规定",
+      "level": "rule",
+      "publisher": "国家互联网信息办公室",
+      "document_number": "国家互联网信息办公室令 第16号",
+      "promulgated_date": "2024-03-22",
+      "effective_date": "2024-03-22",
+      "status": "in_force",
+      "topics": [
+        "cross_border",
+        "personal_information",
+        "free_trade_zone"
+      ],
+      "summary": "放宽跨境流动条件、收窄安全评估范围,确立免申报情形与自贸区负面清单机制;自公布之日起施行。",
+      "source_id": "cross-border-provisions-fulltext,cross-border-provisions-announcement",
+      "source_url": "https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm",
+      "verification": "confirmed",
+      "evidence_quote": "国家互联网信息办公室令 第16号 …… 自公布之日起施行"
+    },
+    {
+      "id": "cross-border-assessment-measures",
+      "name": "数据出境安全评估办法",
+      "level": "rule",
+      "publisher": "国家互联网信息办公室",
+      "document_number": "国家互联网信息办公室令 第11号",
+      "promulgated_date": "2022-07-07",
+      "effective_date": "2022-09-01",
+      "status": "in_force",
+      "topics": [
+        "cross_border",
+        "security_assessment",
+        "important_data"
+      ],
+      "summary": "数据出境三条路径之一:安全评估的申报条件、自评估要求与流程。",
+      "source_id": "cross-border-assessment-measures",
+      "source_url": "https://www.cac.gov.cn/2022-07/07/c_1658811536396503.htm",
+      "verification": "confirmed",
+      "evidence_quote": "自2022年9月1日起施行。"
+    },
+    {
+      "id": "cross-border-standard-contract-measures",
+      "name": "个人信息出境标准合同办法",
+      "level": "rule",
+      "publisher": "国家互联网信息办公室",
+      "document_number": "国家互联网信息办公室令 第13号",
+      "promulgated_date": "2023-02-22",
+      "effective_date": "2023-06-01",
+      "status": "in_force",
+      "topics": [
+        "cross_border",
+        "personal_information",
+        "standard_contract"
+      ],
+      "summary": "数据出境三条路径之一:标准合同的订立、备案与个人信息保护影响评估要求。",
+      "source_id": "cross-border-standard-contract-measures",
+      "source_url": "https://www.cac.gov.cn/2023-02/24/c_1678884830036813.htm",
+      "verification": "confirmed",
+      "evidence_quote": "自2023年6月1日起施行。"
+    },
+    {
+      "id": "compliance-audit-measures",
+      "name": "个人信息保护合规审计管理办法",
+      "level": "rule",
+      "publisher": "国家互联网信息办公室",
+      "document_number": "国家互联网信息办公室令 第18号",
+      "effective_date": "2025-05-01",
+      "status": "in_force",
+      "topics": [
+        "audit",
+        "personal_information"
+      ],
+      "summary": "个保合规审计的定义、触发条件与频率(处理超1000万人者每两年至少一次),附《个人信息保护合规审计指引》。",
+      "source_id": "compliance-audit-measures-fulltext,compliance-audit-measures-announcement",
+      "source_url": "https://www.cac.gov.cn/2025-02/14/c_1741233507681519.htm",
+      "verification": "confirmed",
+      "evidence_quote": "自2025年5月1日起施行。"
+    },
+    {
+      "id": "face-recognition-measures",
+      "name": "人脸识别技术应用安全管理办法",
+      "level": "rule",
+      "publisher": "国家互联网信息办公室、公安部",
+      "document_number": "国家互联网信息办公室 第19号",
+      "effective_date": "2025-06-01",
+      "status": "in_force",
+      "topics": [
+        "biometrics",
+        "sensitive_pi",
+        "filing"
+      ],
+      "summary": "人脸信息处理的基本要求与安全规范;存储人脸信息达10万人的处理者须向省级网信部门备案。",
+      "source_id": "face-recognition-measures-fulltext,face-recognition-measures-announcement",
+      "source_url": "https://www.cac.gov.cn/2025-03/21/c_1744174262156096.htm",
+      "verification": "confirmed",
+      "evidence_quote": "自2025年6月1日起施行。"
+    },
+    {
+      "id": "genai-interim-measures",
+      "name": "生成式人工智能服务管理暂行办法",
+      "level": "rule",
+      "publisher": "国家互联网信息办公室等七部门",
+      "effective_date": "2023-08-15",
+      "status": "in_force",
+      "topics": [
+        "ai",
+        "genai",
+        "filing",
+        "training_data"
+      ],
+      "summary": "生成式AI服务提供者的训练数据、内容安全与标识义务;具舆论属性或社会动员能力的须安全评估并履行算法备案。",
+      "source_id": "genai-interim-measures",
+      "source_url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+      "verification": "confirmed",
+      "evidence_quote": "自2023年8月15日起施行。"
+    },
+    {
+      "id": "algorithm-recommendation-provisions",
+      "name": "互联网信息服务算法推荐管理规定",
+      "level": "rule",
+      "publisher": "国家互联网信息办公室等四部门",
+      "effective_date": "2022-03-01",
+      "status": "in_force",
+      "topics": [
+        "algorithm",
+        "filing"
+      ],
+      "summary": "算法推荐服务的分类分级管理与算法备案总入口。",
+      "source_id": "algorithm-recommendation-provisions",
+      "source_url": "https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm",
+      "verification": "confirmed",
+      "evidence_quote": "自2022年3月1日起施行。"
+    },
+    {
+      "id": "deep-synthesis-provisions",
+      "name": "互联网信息服务深度合成管理规定",
+      "level": "rule",
+      "publisher": "国家互联网信息办公室等三部门",
+      "effective_date": "2023-01-10",
+      "status": "in_force",
+      "topics": [
+        "ai",
+        "deep_synthesis",
+        "labeling"
+      ],
+      "summary": "深度合成服务的数据与技术管理规范,以及生成内容的标识义务。",
+      "source_id": "deep-synthesis-provisions",
+      "source_url": "https://www.cac.gov.cn/2022-12/11/c_1672221949318230.htm",
+      "verification": "confirmed",
+      "evidence_quote": "自2023年1月10日起施行。"
+    },
+    {
+      "id": "cybersecurity-review-measures-2022",
+      "name": "网络安全审查办法(2022)",
+      "level": "rule",
+      "publisher": "国家互联网信息办公室等十三部门",
+      "effective_date": "2022-02-15",
+      "status": "in_force",
+      "topics": [
+        "cii",
+        "review",
+        "cross_border",
+        "listing"
+      ],
+      "summary": "关键信息基础设施运营者采购网络产品服务、以及网络平台运营者数据处理活动影响国家安全时的审查制度。",
+      "source_id": "cybersecurity-review-measures-2022",
+      "source_url": "https://www.cac.gov.cn/2022-01/04/c_1642894602182845.htm",
+      "verification": "confirmed",
+      "evidence_quote": "自2022年2月15日起施行。"
+    },
+    {
+      "id": "automotive-data-provisions",
+      "name": "汽车数据安全管理若干规定(试行)",
+      "level": "rule",
+      "publisher": "国家互联网信息办公室等五部门",
+      "effective_date": "2021-10-01",
+      "status": "in_force",
+      "topics": [
+        "automotive",
+        "important_data",
+        "personal_information"
+      ],
+      "summary": "汽车数据处理者的个人信息与重要数据处理规则,含车外人脸等敏感数据的默认不收集要求。",
+      "source_id": "automotive-data-provisions",
+      "source_url": "https://www.cac.gov.cn/2021-08/20/c_1631049984897667.htm",
+      "verification": "confirmed",
+      "evidence_quote": "自2021年10月1日起施行。"
+    },
+    {
+      "id": "children-pi-protection-provisions",
+      "name": "儿童个人信息网络保护规定",
+      "level": "rule",
+      "publisher": "国家互联网信息办公室",
+      "effective_date": "2019-10-01",
+      "status": "in_force",
+      "topics": [
+        "minors",
+        "personal_information",
+        "consent"
+      ],
+      "summary": "不满十四周岁未成年人个人信息的网络处理规则,含监护人同意要求。",
+      "source_id": "children-pi-protection-provisions",
+      "source_url": "https://www.cac.gov.cn/2019-08/23/c_1124913903.htm",
+      "verification": "confirmed",
+      "evidence_quote": "自2019年10月1日起施行。"
+    },
+    {
+      "id": "app-necessary-pi-scope",
+      "name": "常见类型移动互联网应用程序必要个人信息范围规定",
+      "level": "normative_document",
+      "publisher": "国家互联网信息办公室等四部门",
+      "status": "in_force",
+      "topics": [
+        "app",
+        "personal_information",
+        "necessity"
+      ],
+      "summary": "按App类型逐一列明「必要个人信息」范围,是必要原则执法的直接依据。",
+      "source_id": "app-necessary-pi-scope",
+      "source_url": "https://www.cac.gov.cn/2021-03/22/c_1617990997054277.htm",
+      "verification": "confirmed",
+      "effective_date": "2021-05-01",
+      "evidence_quote": "第七条 本规定自2021年5月1日起施行。"
+    },
+    {
+      "id": "app-violation-identification-method",
+      "name": "App违法违规收集使用个人信息行为认定方法",
+      "level": "normative_document",
+      "publisher": "国家互联网信息办公室、工业和信息化部、公安部、市场监管总局",
+      "status": "in_force",
+      "topics": [
+        "app",
+        "enforcement",
+        "personal_information"
+      ],
+      "summary": "认定App违法违规收集使用个人信息的六大类行为,是通报与整改的判定标准。",
+      "source_id": "app-violation-identification-method",
+      "source_url": "https://www.cac.gov.cn/2019-12/27/c_1578986455686625.htm",
+      "verification": "confirmed",
+      "conflict_note": "归档正文为印发通知形式,未见独立施行日条款,故不填 effective_date;该文件为2019年印发(国信办秘字〔2019〕191号)。",
+      "evidence_quote": "根据《关于开展App违法违规收集使用个人信息专项治理的公告》，为监督管理部门认定App违法违规收集使用个人信息行为提供参考，为App运营者自查自纠和网民社会监督提供指引，落实《网络安全法》等法律法规，制定本方法。"
+    },
+    {
+      "id": "gbt-43697-2024",
+      "name": "GB/T 43697-2024 数据安全技术 数据分类分级规则",
+      "level": "standard",
+      "publisher": "国家市场监督管理总局、国家标准化管理委员会",
+      "promulgated_date": "2024-03-15",
+      "effective_date": "2024-10-01",
+      "status": "in_force",
+      "topics": [
+        "classification",
+        "important_data",
+        "standard"
+      ],
+      "summary": "核心/重要/一般三级分级框架与重要数据识别指南;网安标委首份数据安全技术国家标准。",
+      "source_id": "gbt-43697-2024-openstd",
+      "source_url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=F0C385EDC38CBF277AEC021F23126ADE",
+      "verification": "confirmed",
+      "conflict_note": "归档为标准平台检索条目页,含发布/实施日期字段但**不含标准正文**;引用标准条文(如三级分级口径)前须取正文。",
+      "evidence_quote": "2024-03-15"
+    },
+    {
+      "id": "tc260-pi-standard-system-2025",
+      "name": "个人信息保护国家标准体系(2025版)",
+      "level": "guide",
+      "publisher": "全国网络安全标准化技术委员会",
+      "status": "draft_for_comment",
+      "topics": [
+        "standard",
+        "personal_information"
+      ],
+      "summary": "个保国标全景与在编标准清单。注意:归档版本为征求意见稿,不得作为已发布标准引用。",
+      "source_id": "tc260-pi-standard-system-2025",
+      "source_url": "https://www.tc260.org.cn/upload/2025-08-15/1755260054246031200.pdf",
+      "verification": "confirmed",
+      "evidence_quote": "个人信息保护国家标准体系（2025 版）（征求意见稿） 全国网络安全标准化技术委员会秘书处 2025 年 8 月"
+    },
+    {
+      "id": "pi-export-certification-measures",
+      "name": "个人信息出境认证办法",
+      "level": "rule",
+      "publisher": "国家互联网信息办公室、国家市场监督管理总局",
+      "document_number": "国家互联网信息办公室、国家市场监督管理总局令 第20号",
+      "promulgated_date": "2025-10-17",
+      "effective_date": "2026-01-01",
+      "status": "in_force",
+      "topics": [
+        "cross_border",
+        "certification",
+        "personal_information"
+      ],
+      "summary": "数据出境三路径中「认证」的正式上位依据:适用门槛、前置义务、证书3年有效期与续证。",
+      "source_id": "pi-export-certification-measures-2025-10-17",
+      "source_url": "https://www.cac.gov.cn/2025-10/17/c_1762449728720008.htm",
+      "verification": "confirmed",
+      "evidence_quote": "本办法自2026年1月1日起施行"
+    },
+    {
+      "id": "network-data-risk-assessment-measures",
+      "name": "网络数据安全风险评估办法",
+      "level": "rule",
+      "publisher": "国家互联网信息办公室",
+      "effective_date": "2026-08-20",
+      "status": "in_force",
+      "topics": [
+        "risk_assessment",
+        "important_data"
+      ],
+      "summary": "重要数据处理者年度风险评估与报送制度;报告须在评估完成后20个工作日内报送。",
+      "source_id": "network-data-risk-assessment-2026-08-20",
+      "source_url": "https://www.cac.gov.cn/2026-08/20/c_1788889498173657.htm",
+      "verification": "confirmed",
+      "evidence_quote": "于2026年8月20日起施行",
+      "conflict_note": "本库归档的是实施答记者问,办法全文尚未归档;条文级引用前需取全文。"
+    },
+    {
+      "id": "financial-data-classification-guide",
+      "name": "金融信息服务数据分类分级指南",
+      "level": "guide",
+      "publisher": "国家互联网信息办公室、中国人民银行、金融监管总局、证监会、国家统计局、国家外汇管理局",
+      "document_number": "国信办通字〔2026〕2号",
+      "promulgated_date": "2026-06-13",
+      "status": "in_force",
+      "topics": [
+        "financial",
+        "classification",
+        "important_data"
+      ],
+      "summary": "金融信息服务领域四级分级(核心/重要/敏感一般/常规一般)与3/9/67三层分类。",
+      "source_id": "financial-data-classification-guide-2026-06-13",
+      "source_url": "https://www.cac.gov.cn/2026-06/13/c_1782919789934988.htm",
+      "verification": "confirmed",
+      "evidence_quote": "国信办通字〔2026〕2号",
+      "conflict_note": "归档正文载明发文日期与印发通知,未载明独立施行日期,故不填 effective_date。"
+    },
+    {
+      "id": "large-pi-processor-provisions-draft",
+      "name": "大型个人信息处理者个人信息保护规定(征求意见稿)",
+      "level": "rule",
+      "publisher": "国家互联网信息办公室",
+      "promulgated_date": "2026-08-07",
+      "status": "draft_for_comment",
+      "topics": [
+        "platform",
+        "personal_information",
+        "localization"
+      ],
+      "summary": "1000万人以上认定门槛、监督委员会(≥7人/外部≥2/3)、境内存储与数据中心要求。尚未生效。",
+      "source_id": "large-pi-processor-draft-draft-2026-08-07",
+      "source_url": "https://www.cac.gov.cn/2026-08/07/c_1787851071612596.htm",
+      "verification": "confirmed",
+      "evidence_quote": "（一）处理1000万人以上自然人个人信息；",
+      "conflict_note": "征求意见稿,绝不可作为已生效义务引用;已整合替代2025-09-12《大型网络平台设立个人信息保护监督委员会规定(征求意见稿)》。"
+    },
+    {
+      "id": "pi-cert-standard-change-2025",
+      "name": "关于变更个人信息出境认证依据标准的公告",
+      "level": "normative_document",
+      "publisher": "国家市场监督管理总局、国家互联网信息办公室",
+      "promulgated_date": "2025-12-25",
+      "status": "in_force",
+      "topics": [
+        "cross_border",
+        "certification",
+        "standard"
+      ],
+      "summary": "跨境处理活动的个人信息保护认证依据标准变更为 GB/T 35273 与 GB/T 46068。",
+      "source_id": "pi-cert-standard-change-2025-12-25",
+      "source_url": "https://www.cac.gov.cn/2025-12/25/c_1768389897326323.htm",
+      "verification": "confirmed",
+      "evidence_quote": "涉及跨境处理活动的个人信息保护认证依据标准变更为GB/T 35273、GB/T 46068"
+    },
+    {
+      "id": "dpo-reporting-announcement",
+      "name": "关于开展个人信息保护负责人信息报送工作的公告",
+      "level": "normative_document",
+      "publisher": "国家互联网信息办公室",
+      "promulgated_date": "2025-07-18",
+      "status": "in_force",
+      "topics": [
+        "audit",
+        "dpo",
+        "filing"
+      ],
+      "summary": "处理100万人以上者须在30个工作日内向设区的市级网信部门报送DPO信息;存量截止2025-08-29。",
+      "source_id": "dpo-reporting-2025-07-18",
+      "source_url": "https://www.cac.gov.cn/2025-07/18/c_1754553420421538.htm",
+      "verification": "confirmed",
+      "evidence_quote": "应当向所在地设区的市级网信部门履行个人信息保护负责人信息报送手续"
+    },
+    {
+      "id": "minors-audit-reporting-announcement",
+      "name": "关于报送未成年人个人信息保护合规审计情况的公告",
+      "level": "normative_document",
+      "publisher": "国家互联网信息办公室",
+      "promulgated_date": "2025-12-29",
+      "status": "in_force",
+      "topics": [
+        "minors",
+        "audit",
+        "filing"
+      ],
+      "summary": "处理未成年人个人信息者须每年1月底前向设区的市级网信部门报送上一年度合规审计情况。",
+      "source_id": "minors-audit-reporting-2025-12-29",
+      "source_url": "https://www.cac.gov.cn/2025-12/29/c_1768735145606358.htm",
+      "verification": "confirmed",
+      "evidence_quote": "应当于每年1月底前报送上一年度未成年人个人信息保护合规审计情况"
+    },
+    {
+      "id": "face-recognition-filing-announcement",
+      "name": "关于开展人脸识别技术应用备案工作的公告",
+      "level": "normative_document",
+      "publisher": "国家互联网信息办公室",
+      "promulgated_date": "2025-05-30",
+      "status": "in_force",
+      "topics": [
+        "biometrics",
+        "filing"
+      ],
+      "summary": "人脸信息存储达10万人须30个工作日内备案;存量截止2025-07-14;线上系统办理。",
+      "source_id": "face-recognition-filing-2025-05-30",
+      "source_url": "https://www.cac.gov.cn/2025-05/30/c_1750315544241157.htm",
+      "verification": "confirmed",
+      "evidence_quote": "应当在2025年7月14日前履行备案手续"
+    },
+    {
+      "id": "pi-certification-impl-rules",
+      "name": "个人信息保护认证实施规则",
+      "level": "normative_document",
+      "publisher": "国家市场监督管理总局、国家互联网信息办公室",
+      "promulgated_date": "2022-11-18",
+      "status": "in_force",
+      "topics": [
+        "certification",
+        "personal_information"
+      ],
+      "summary": "个人信息保护认证的委托、变更与撤销程序。",
+      "source_id": "pi-certification-impl-rules-2022-11-18",
+      "source_url": "https://www.cac.gov.cn/2022-11/18/c_1670399936983876.htm",
+      "verification": "confirmed",
+      "evidence_quote": "应当向认证机构提出变更委托"
+    },
+    {
+      "id": "gbt-39335-2020",
+      "name": "GB/T 39335-2020 信息安全技术 个人信息安全影响评估指南",
+      "level": "standard",
+      "publisher": "国家市场监督管理总局、国家标准化管理委员会(TC260 技术归口)",
+      "status": "in_force",
+      "topics": [
+        "pipia",
+        "standard"
+      ],
+      "summary": "个人信息保护国家标准体系(2025版)所列已发布国标。",
+      "source_id": "tc260-doc-2025-09-16",
+      "source_url": "https://www.tc260.org.cn/upload/2025-09-16/1757991247699056052.pdf",
+      "verification": "confirmed",
+      "evidence_quote": "17                      GB/T 39335-2020   推荐性国家标准    已发布",
+      "conflict_note": "标准号与名称取自个保国标体系(2025版)定稿附件清单;本库未归档标准正文,引用具体条款前请取正文。"
+    },
+    {
+      "id": "gbt-42582-2023",
+      "name": "GB/T 42582-2023 信息安全技术 移动互联网应用程序(APP)个人信息安全测评规范",
+      "level": "standard",
+      "publisher": "国家市场监督管理总局、国家标准化管理委员会(TC260 技术归口)",
+      "status": "in_force",
+      "topics": [
+        "app",
+        "standard"
+      ],
+      "summary": "个人信息保护国家标准体系(2025版)所列已发布国标。",
+      "source_id": "tc260-doc-2025-09-16",
+      "source_url": "https://www.tc260.org.cn/upload/2025-09-16/1757991247699056052.pdf",
+      "verification": "confirmed",
+      "evidence_quote": "22    程序（APP）个人信息安全测评   GB/T 42582-2023   推荐性国家标准    已发布",
+      "conflict_note": "标准号与名称取自个保国标体系(2025版)定稿附件清单;本库未归档标准正文,引用具体条款前请取正文。"
+    },
+    {
+      "id": "gbt-44588-2024",
+      "name": "GB/T 44588-2024 数据安全技术 互联网平台及产品服务个人信息处理规则",
+      "level": "standard",
+      "publisher": "国家市场监督管理总局、国家标准化管理委员会(TC260 技术归口)",
+      "status": "in_force",
+      "topics": [
+        "platform",
+        "standard"
+      ],
+      "summary": "个人信息保护国家标准体系(2025版)所列已发布国标。",
+      "source_id": "tc260-doc-2025-09-16",
+      "source_url": "https://www.tc260.org.cn/upload/2025-09-16/1757991247699056052.pdf",
+      "verification": "confirmed",
+      "evidence_quote": "12                      GB/T 44588-2024   推荐性国家标准    已发布",
+      "conflict_note": "标准号与名称取自个保国标体系(2025版)定稿附件清单;本库未归档标准正文,引用具体条款前请取正文。"
+    },
+    {
+      "id": "gbt-45392-2025",
+      "name": "GB/T 45392-2025 数据安全技术 基于个人信息的自动化决策安全要求",
+      "level": "standard",
+      "publisher": "国家市场监督管理总局、国家标准化管理委员会(TC260 技术归口)",
+      "status": "in_force",
+      "topics": [
+        "automated_decision",
+        "standard"
+      ],
+      "summary": "个人信息保护国家标准体系(2025版)所列已发布国标。",
+      "source_id": "tc260-doc-2025-09-16",
+      "source_url": "https://www.tc260.org.cn/upload/2025-09-16/1757991247699056052.pdf",
+      "verification": "confirmed",
+      "evidence_quote": "14                      GB/T 45392-2025   推荐性国家标准    已发布",
+      "conflict_note": "标准号与名称取自个保国标体系(2025版)定稿附件清单;本库未归档标准正文,引用具体条款前请取正文。"
+    },
+    {
+      "id": "gbt-45404-2025",
+      "name": "GB/T 45404-2025 数据安全技术 大型互联网企业内设个人信息保护监督机构要求",
+      "level": "standard",
+      "publisher": "国家市场监督管理总局、国家标准化管理委员会(TC260 技术归口)",
+      "status": "in_force",
+      "topics": [
+        "platform",
+        "standard"
+      ],
+      "summary": "个人信息保护国家标准体系(2025版)所列已发布国标。",
+      "source_id": "tc260-doc-2025-09-16",
+      "source_url": "https://www.tc260.org.cn/upload/2025-09-16/1757991247699056052.pdf",
+      "verification": "confirmed",
+      "evidence_quote": "9     内设个人信息保护监督机构要     GB/T 45404-2025   推荐性国家标准    已发布",
+      "conflict_note": "标准号与名称取自个保国标体系(2025版)定稿附件清单;本库未归档标准正文,引用具体条款前请取正文。"
+    },
+    {
+      "id": "gbt-45574-2025",
+      "name": "GB/T 45574-2025 数据安全技术 敏感个人信息处理安全要求",
+      "level": "standard",
+      "publisher": "国家市场监督管理总局、国家标准化管理委员会(TC260 技术归口)",
+      "status": "in_force",
+      "topics": [
+        "sensitive_pi",
+        "standard"
+      ],
+      "summary": "个人信息保护国家标准体系(2025版)所列已发布国标。",
+      "source_id": "tc260-doc-2025-09-16",
+      "source_url": "https://www.tc260.org.cn/upload/2025-09-16/1757991247699056052.pdf",
+      "verification": "confirmed",
+      "evidence_quote": "3                       GB/T 45574-2025   推荐性国家标准    已发布",
+      "conflict_note": "标准号与名称取自个保国标体系(2025版)定稿附件清单;本库未归档标准正文,引用具体条款前请取正文。"
+    },
+    {
+      "id": "gbt-46068-2025",
+      "name": "GB/T 46068-2025 数据安全技术 个人信息跨境处理活动安全认证要求",
+      "level": "standard",
+      "publisher": "国家市场监督管理总局、国家标准化管理委员会(TC260 技术归口)",
+      "status": "in_force",
+      "topics": [
+        "cross_border",
+        "standard"
+      ],
+      "summary": "个人信息保护国家标准体系(2025版)所列已发布国标。",
+      "source_id": "tc260-doc-2025-09-16",
+      "source_url": "https://www.tc260.org.cn/upload/2025-09-16/1757991247699056052.pdf",
+      "verification": "confirmed",
+      "evidence_quote": "24                      GB/T 46068-2025   推荐性国家标准    已发布",
+      "conflict_note": "标准号与名称取自个保国标体系(2025版)定稿附件清单;本库未归档标准正文,引用具体条款前请取正文。"
+    },
+    {
+      "id": "gbt-35273-2020",
+      "name": "GB/T 35273-2020 信息安全技术 个人信息安全规范",
+      "level": "standard",
+      "publisher": "国家市场监督管理总局、国家标准化管理委员会(TC260 技术归口)",
+      "status": "in_force",
+      "topics": [
+        "personal_information",
+        "standard"
+      ],
+      "summary": "个人信息保护国家标准体系(2025版)所列已发布国标。",
+      "source_id": "tc260-doc-2025-09-16",
+      "source_url": "https://www.tc260.org.cn/upload/2025-09-16/1757991247699056052.pdf",
+      "verification": "confirmed",
+      "evidence_quote": "2                       GB/T 35273-2020   推荐性国家标准",
+      "conflict_note": "个保国标体系(2025版)定稿附件标注其状态为「修订中(草案)」,不宜作长期基线锁死。"
+    }
+  ]
+}

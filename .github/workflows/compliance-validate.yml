@@ -1,0 +1,31 @@
+name: compliance validate
+
+# Only the compliance/ sub-library is machine-checkable, so the gate is scoped
+# to it — the rest of this list is curated links and stays a human judgement.
+on:
+  push:
+    branches: [main]
+    paths: ['compliance/**']
+  pull_request:
+    paths: ['compliance/**']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: quotes + archive integrity
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: compliance
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      # No pip install: the validator is standard library only, on purpose, so
+      # a contributor with a bare Python runs exactly what CI runs.
+      - name: Validate datasets, quotes and archive integrity
+        run: python3 scripts/validate.py

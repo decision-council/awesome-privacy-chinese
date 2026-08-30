@@ -1,0 +1,108 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Regulation record",
+  "description": "One Chinese data/privacy legal instrument. Every record must trace to an archived primary source.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "level",
+    "publisher",
+    "source_id",
+    "verification"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "stable kebab-case identifier"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 2,
+      "description": "official Chinese title, verbatim"
+    },
+    "name_en": {
+      "type": "string",
+      "description": "common English rendering, if any"
+    },
+    "abbr": {
+      "type": "string",
+      "description": "common abbreviation, e.g. PIPL"
+    },
+    "level": {
+      "type": "string",
+      "enum": [
+        "law",
+        "regulation",
+        "rule",
+        "normative_document",
+        "standard",
+        "guide"
+      ],
+      "description": "law=法律, regulation=行政法规, rule=部门规章/规定, standard=国家标准, guide=实践指南"
+    },
+    "publisher": {
+      "type": "string",
+      "description": "issuing body, verbatim"
+    },
+    "document_number": {
+      "type": "string",
+      "description": "e.g. 国家互联网信息办公室令 第18号"
+    },
+    "promulgated_date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "effective_date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "in_force",
+        "draft_for_comment",
+        "superseded",
+        "repealed"
+      ],
+      "description": "draft_for_comment = 征求意见稿, must never be presented as binding"
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "e.g. cross_border, personal_information, ai, minors, audit"
+    },
+    "summary": {
+      "type": "string",
+      "description": "one-line, factual, no interpretation"
+    },
+    "source_id": {
+      "type": "string",
+      "description": "archived source id from sources/MANIFEST.json. May be a comma-separated list when a fact spans several archived pages (e.g. a paginated law); in that case sources/text/<id>.txt exists for each element, not for the joined string. validate.py splits on commas."
+    },
+    "source_url": {
+      "type": "string",
+      "pattern": "^https?://"
+    },
+    "verification": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "disputed",
+        "unverified"
+      ],
+      "description": "confirmed requires evidence_quote; disputed requires conflict_note"
+    },
+    "evidence_quote": {
+      "type": "string",
+      "description": "verbatim quote from the archived text supporting the dates/status"
+    },
+    "conflict_note": {
+      "type": "string",
+      "description": "required when verification=disputed: who says what, and why they differ"
+    }
+  }
+}

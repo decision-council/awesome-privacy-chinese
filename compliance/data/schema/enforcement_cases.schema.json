@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Enforcement case record",
+  "description": "One violation category from one official enforcement notice. Column order in enforcement_cases.csv must match the property order below — scripts/validate.py enforces it.",
+  "type": "object",
+  "required": [
+    "id",
+    "date",
+    "authority",
+    "violation_category",
+    "source_id",
+    "verification"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "notice publication date (Beijing time)"
+    },
+    "authority": {
+      "type": "string",
+      "description": "issuing body, verbatim"
+    },
+    "notice_title": {
+      "type": "string"
+    },
+    "violation_category": {
+      "type": "string",
+      "description": "the violation as worded in the notice, condensed"
+    },
+    "app_count": {
+      "type": "integer",
+      "description": "number of apps cited under this category. LEAVE BLANK when the notice states a problem type without a count — CONTRIBUTING says do not guess. A blank here is a fact about the source, not a missing value."
+    },
+    "example_apps": {
+      "type": "string",
+      "description": "apps named in the notice body, semicolon separated"
+    },
+    "legal_basis": {
+      "type": "string",
+      "description": "instruments cited by the notice, semicolon separated"
+    },
+    "rectification_deadline": {
+      "type": "string",
+      "description": "e.g. 15个工作日"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "verification": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "disputed",
+        "unverified"
+      ]
+    },
+    "evidence_quote": {
+      "type": "string",
+      "description": "verbatim quote from the archived notice"
+    },
+    "conflict_note": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title> 全国人民代表大会常务委员会关于修改《中华人民共和国网络安全法》的决定_中国人大网</title>
+<meta name="keywords" content=""/>
+<link type="text/css" href="../../../images/common_content.css" rel="stylesheet" />
+<link type="text/css" href="../../../images/secondlevel.css" rel="stylesheet" />
+<script src="../../../images/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<!-- 引入video.js相关文件 -->
+        <link href="/npcVideo/video.js/video-js.min.css" rel="stylesheet">
+        <script src="/npcVideo/video.js/ie8/videojs-ie8.min.js" type="text/javascript"></script>
+        <script src="/npcVideo/video.js/video.min.js" type="text/javascript"></script>
+        <script src="/npcVideo/video.js/lang/zh-CN.js" type="text/javascript"></script>
+
+        <!-- 引入audio.js相关文件 -->
+        <script src="/npcVideo/audio.js/audio.min.js" type="text/javascript"></script>
+        <script src="/npcVideo/audio.js/audioplayer.min.js" type="text/javascript"></script>
+
+        <!-- 增加一个样式，用于初始隐藏WCM生成的播放代码，可加到网站主样式表 -->
+        <style type="text/css">
+            .video_hide {
+                display: none;
+            }
+            .audio_hide {
+                display: none;
+            }
+             .video-js {background:none!important;width: 100%!important;}
+        </style>
+
+        <script type="text/javascript">
+            //判断是否是移动设备
+            var isMobile = {
+                Android: function() {
+                    return navigator.userAgent.match(/Android/i) ? true : false;
+                },
+                BlackBerry: function() {
+                    return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+                },
+                iOS: function() {
+                    return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+                },
+                Windows: function() {
+                    return navigator.userAgent.match(/IEMobile/i) ? true : false;
+                },
+                any: function() {
+                    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+                }
+            };
+
+            $(document).ready(function() {
+                //设置flash播放器的地址，如果浏览器不支持html5，会用这个flash播放器播放
+                videojs.options.flash.swf = "video.js/video-js.swf";
+
+                //遍历WCM生成的视频播放代码
+                $("embed[mediatype=video]").each(function(index, el) {
+                    //从原始标签中获取播放属性（高宽、自动播放、循环播放、显示控制条等）
+                    //loop属性通过HTML属性获取，用jquery获取有误
+                    var loop = $(this)[0].getAttribute('loop') == 1;
+                    var autoplay = $(this).attr('autostart') == 1;
+                    var controls = $(this).attr('menu') == 1;
+                    var options = {
+                        "controls": controls,
+                        "autoplay": autoplay,
+                        "loop": loop,
+                        "width": $(this).attr('width'),
+                        "height": $(this).attr('height'),
+                        "language": "zh-CN"
+                    };
+                    //生成video标签
+                    var video = $('<video>').addClass('video-js vjs-default-skin vjs-big-play-centered')
+                        .attr('id', 'videojs_' + index)
+                        .append($('<source>').attr({
+                            'type': 'video/mp4',
+                            'src': $(this).attr('src')
+                        }));
+                    //将原播放标签替换
+                    $(this).replaceWith(video);
+                    //初始化播放代码
+                    var myPlayer = videojs("videojs_" + index, options);
+                });
+
+                //遍历WCM生成的音频播放代码
+                $("embed[mediatype=audio]").each(function(index, el) {
+                    //从原始标签中获取播放属性（自动播放、循环播放）
+                    //loop属性通过HTML属性获取，用jquery获取有误
+                    var loop = $(this)[0].getAttribute('loop') == 1;
+                    var autoplay = $(this).attr('autostart') == 1;
+                    //生成audio标签
+                    var audio = $('<audio>')
+                        .attr('controls', 'controls')
+                        .attr('preload', 'auto')
+                        .attr('src', $(this).attr('src'));
+                    if (loop) audio.attr('loop', 'loop');
+                    if (autoplay) audio.attr('autoplay', 'autoplay');
+                    //将原播放标签替换
+                    $(this).replaceWith(audio);
+                    
+                });
+                //根据不同的设备（PC/移动）调用不同的显示方式
+                if (!isMobile.any()) {
+                    //$('<script>').attr('src', 'audio.js/audio.min.js').appendTo('body');
+                    var as = audiojs.createAll();
+                } else {
+                    //$('<script>').attr('src', 'audio.js/audioplayer.min.js').appendTo('body');
+                    $('<link>').attr('href', 'audio.js/audioplayer.css').attr('rel', 'stylesheet').appendTo('body');
+                    $('audio').audioPlayer();
+                }
+            });
+        </script>
+</head>
+<body>
+<a name="top1" id="top1"></a> 
+
+<div class="wrap01"><iframe id="headIfr" src="../../../c191/c12481/c12451/" width="100%" height="209" frameborder="0" scrolling="no" marginheight="0"></iframe></div>
+
+<div class="wrapper">
+<div class="content">
+<div class="article-crumbs">当前位置：<a href="../../../" title="首页" class="CurrChnlCls">首页</a></div>
+
+<div class="fl w680">
+<div class="tit"><h2></h2>
+<h1>全国人民代表大会常务委员会关于修改<div>《中华人民共和国网络安全法》的决定</div></h1>
+<h3>（2025年10月28日第十四届全国人民代表大会常务委员会第十八次会议通过）</h3>
+<p></p>
+<p></p>
+</div>
+
+<div class="fontsize"> 来源： 中国人大网&nbsp;&nbsp;浏览字号： <a href="#" onclick="Zoom.style.fontSize='24px';">大</a> <a href="#" onclick="Zoom.style.fontSize='16px';">中</a> <a href="#" onclick="Zoom.style.fontSize='12px';">小</a>
+<span class="fr" id="zzrq"></span>  
+  </div>
+<script type="text/javascript">
+    $(function(){
+        var fbrq = "2025年10月28日 18:58"
+        if($('#zzrq').html() == ''){
+            $('#zzrq').html(fbrq);
+        }
+    })
+</script>
+<div id="Zoom">
+<div class=TRS_Editor><div>　　第十四届全国人民代表大会常务委员会第十八次会议决定对《中华人民共和国网络安全法》作如下修改：</div>
+<div>　　<font face="黑体">一、</font>增加一条，作为第三条：“网络安全工作坚持中国共产党的领导，贯彻总体国家安全观，统筹发展和安全，推进网络强国建设。”</div>
+<div>　　<font face="黑体">二、</font>将第十八条改为第十九条，删去第二款。</div>
+<div>　　<font face="黑体">三、</font>增加一条，作为第二十条：“国家支持人工智能基础理论研究和算法等关键技术研发，推进训练数据资源、算力等基础设施建设，完善人工智能伦理规范，加强风险监测评估和安全监管，促进人工智能应用和健康发展。</div>
+<div>　　“国家支持创新网络安全管理方式，运用人工智能等新技术，提升网络安全保护水平。”</div>
+<div>　　<font face="黑体">四、</font>将第四十条改为第四十二条，增加一款，作为第二款：“网络运营者处理个人信息，应当遵守本法和《中华人民共和国民法典》、《中华人民共和国个人信息保护法》等法律、行政法规的规定。”</div>
+<div>　　<font face="黑体">五、</font>将第五十九条改为第六十一条，修改为：“网络运营者不履行本法第二十三条、第二十七条规定的网络安全保护义务的，由有关主管部门责令改正，给予警告，可以处一万元以上五万元以下罚款；拒不改正或者导致危害网络安全等后果的，处五万元以上五十万元以下罚款，对直接负责的主管人员和其他直接责任人员处一万元以上十万元以下罚款。</div>
+<div>　　“关键信息基础设施的运营者不履行本法第三十五条、第三十六条、第三十八条、第四十条规定的网络安全保护义务的，由有关主管部门责令改正，给予警告，可以处五万元以上十万元以下罚款；拒不改正或者导致危害网络安全等后果的，处十万元以上一百万元以下罚款，对直接负责的主管人员和其他直接责任人员处一万元以上十万元以下罚款。</div>
+<div>　　“有前两款行为，造成大量数据泄露、关键信息基础设施丧失局部功能等严重危害网络安全后果的，由有关主管部门处五十万元以上二百万元以下罚款，对直接负责的主管人员和其他直接责任人员处五万元以上二十万元以下罚款；造成关键信息基础设施丧失主要功能等特别严重危害网络安全后果的，处二百万元以上一千万元以下罚款，对直接负责的主管人员和其他直接责任人员处二十万元以上一百万元以下罚款。”</div>
+<div>　　<font face="黑体">六、</font>将第六十条改为第六十二条，增加一款，作为第二款：“有前款第一项、第二项行为，造成本法第六十一条第三款规定的后果的，依照该款规定处罚。”</div>
+<div>　　<font face="黑体">七、</font>增加一条，作为第六十三条：“违反本法第二十五条规定，销售或者提供未经安全认证、安全检测或者安全认证不合格、安全检测不符合要求的网络关键设备和网络安全专用产品的，由有关主管部门责令停止销售或者提供，给予警告，没收违法所得；没有违法所得或者违法所得不足十万元的，并处二万元以上十万元以下罚款；违法所得十万元以上的，并处违法所得一倍以上五倍以下罚款；情节严重的，并可以责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照。法律、行政法规另有规定的，依照其规定。”</div>
+<div>　　<font face="黑体">八、</font>将第六十一条改为第六十四条，其中的“并可以由有关主管部门责令暂停相关业务、停业整顿、关闭网站、吊销相关业务许可证或者吊销营业执照”修改为“并可以责令暂停相关业务、停业整顿、关闭网站或者应用程序、吊销相关业务许可证或者吊销营业执照”。</div>
+<div>　　<font face="黑体">九、</font>将第六十二条改为第六十五条，修改为：“违反本法第二十八条规定，开展网络安全认证、检测、风险评估等活动，或者向社会发布系统漏洞、计算机病毒、网络攻击、网络侵入等网络安全信息的，由有关主管部门责令改正，给予警告，可以处一万元以上十万元以下罚款；拒不改正或者情节严重的，处十万元以上一百万元以下罚款，并可以责令暂停相关业务、停业整顿、关闭网站或者应用程序、吊销相关业务许可证或者吊销营业执照，对直接负责的主管人员和其他直接责任人员处一万元以上十万元以下罚款。</div>
+<div>　　“有前款行为，造成本法第六十一条第三款规定的后果的，依照该款规定处罚。”</div>
+<div>　　<font face="黑体">十、</font>将第六十五条改为第六十七条，修改为：“关键信息基础设施的运营者违反本法第三十七条规定，使用未经安全审查或者安全审查未通过的网络产品或者服务的，由有关主管部门责令限期改正、停止使用、消除对国家安全的影响，处采购金额一倍以上十倍以下罚款，对直接负责的主管人员和其他直接责任人员处一万元以上十万元以下罚款。”</div>
+<div>　　<font face="黑体">十一、</font>将第六十八条、第六十九条第一项合并，作为第六十九条，修改为：“网络运营者违反本法第四十九条规定，对法律、行政法规禁止发布或者传输的信息未停止传输、采取消除等处置措施、保存有关记录、向有关主管部门报告，或者违反本法第五十二条规定，不按照有关部门的要求对法律、行政法规禁止发布或者传输的信息停止传输、采取消除等处置措施、保存有关记录的，由有关主管部门责令改正，给予警告、予以通报，可以处五万元以上五十万元以下罚款；拒不改正或者情节严重的，处五十万元以上二百万元以下罚款，并可以责令暂停相关业务、停业整顿、关闭网站或者应用程序、吊销相关业务许可证或者吊销营业执照，对直接负责的主管人员和其他直接责任人员处五万元以上二十万元以下罚款。</div>
+<div>　　“有前款行为，造成特别严重影响、特别严重后果的，由有关主管部门处二百万元以上一千万元以下罚款，责令暂停相关业务、停业整顿、关闭网站或者应用程序、吊销相关业务许可证或者吊销营业执照，对直接负责的主管人员和其他直接责任人员处二十万元以上一百万元以下罚款。</div>
+<div>　　“电子信息发送服务提供者、应用软件下载服务提供者，不履行本法第五十条第二款规定的安全管理义务的，依照前两款规定处罚。”</div>
+<div>　　<font face="黑体">十二、</font>将第六十四条、第六十六条、第七十条合并，作为第七十一条，修改为：“有下列行为之一的，依照有关法律、行政法规的规定处理、处罚：</div>
+<div>　　“（一）发布或者传输本法第十三条第二款和其他法律、行政法规禁止发布或者传输的信息的；</div>
+<div>　　“（二）违反本法第二十四条第三款、第四十三条至第四十五条规定，侵害个人信息权益的；</div>
+<div>　　“（三）违反本法第三十九条规定，关键信息基础设施的运营者在境外存储个人信息和重要数据，或者向境外提供个人信息和重要数据的。</div>
+<div>　　“违反本法第四十六条规定，窃取或者以其他非法方式获取、非法出售或者非法向他人提供个人信息，尚不构成犯罪的，由公安机关依照有关法律、行政法规的规定处罚。”</div>
+<div>　　<font face="黑体">十三、</font>增加一条，作为第七十三条：“违反本法规定，但具有《中华人民共和国行政处罚法》规定的从轻、减轻或者不予处罚情形的，依照其规定从轻、减轻或者不予处罚。”</div>
+<div>　　<font face="黑体">十四、</font>将第七十五条改为第七十七条，修改为：“境外的机构、组织、个人从事危害中华人民共和国网络安全的活动的，依法追究法律责任；造成严重后果的，国务院公安部门和有关部门并可以决定对该机构、组织、个人采取冻结财产或者其他必要的制裁措施。”</div>
+<div>　　本决定自2026年1月1日起施行。</div>
+<div>　　《中华人民共和国网络安全法》根据本决定作相应修改并对条文顺序作相应调整，重新公布。</div>
+<div id="imt-webext">&nbsp;</div></div>
+</div>
+
+<div class="editor">编       辑： 刘冬</div>
+<div class="editor">责       编： 于浩</div>
+
+<div class="share"><a class="fl back" href="../../../"><< 返回首页</a> 
+
+<div class="bdsharebuttonbox" style="width:280px;float:left;">
+<!--<a href="#" class="bds_more" data-cmd="more"></a>-->
+<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+
+
+<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+
+</div>
+
+<script type="text/javascript">
+<!--
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["qzone","tsina","weixin"],"viewText":"分享到：","viewSize":"16"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=86835285.js?cdnversion='+~(-new Date()/36e5)];
+-->
+</script>
+
+ <span style="display:none;"><a class="fr download" href="http://npc.unisk.cn/download.html" target="_blank"> </a></span></div>
+
+<div class="about-article">
+
+<h4>相关文章</h4>
+<ul>
+
+</ul>
+
+</div>
+<script>
+var aboutArticle=document.getElementsByClassName("about-article")[0]; 
+var aboutLi=aboutArticle.getElementsByTagName("li").length;
+if(aboutLi==''){
+	aboutArticle.getElementsByTagName("h4")[0].style.display='none'
+}
+</script>
+
+<div class="printbox"><a href="javascript:window.print()"><img src="../../../images/button_print1.gif" />  </a> <a href="javascript:window.close()"><img src="../../../images/button_close1.gif" />  </a> <a href="#top1"><img src="../../../images/button_back1.gif" border="0" /></a></div>
+</div>
+
+<div class="fr s_rw"><iframe id="rightty3" src="../../../c191/c12481/c22235/" width="272" height="900" scrolling="no" marginheight="0" frameborder="0"></iframe></div>
+</div>
+</div>
+
+<div class="wrap02"><iframe id="headIfr" src="/npc/c191/c12481/c12453/index.shtml" width="100%" height="110" frameborder="0" scrolling="no" marginheight="0"></iframe></div>
+</body>
+</html>
